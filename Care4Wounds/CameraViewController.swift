@@ -36,20 +36,20 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
         let authorizationStatus = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
         switch authorizationStatus {
         case .NotDetermined:
-        // permission dialog not yet presented, request authorization
-        AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo,
-        completionHandler: { (granted:Bool) -> Void in
-        if granted {
-        // go ahead
-        }
-        else {
-        // user denied, nothing much to do
-        }
-        })
+            // permission dialog not yet presented, request authorization
+            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo,
+                completionHandler: { (granted:Bool) -> Void in
+                    if granted {
+                        // go ahead
+                    }
+                    else {
+                        // user denied, nothing much to do
+                    }
+            })
         case .Authorized:
-        // go ahead
+            // go ahead
         case .Denied, .Restricted:
-        // the user explicitly denied camera usage or is not allowed to access the camera devices
+            // the user explicitly denied camera usage or is not allowed to access the camera devices
         }
         */
         
@@ -112,7 +112,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     let screenWidth = UIScreen.mainScreen().bounds.size.width
-    
+
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let anyTouch : UITouch = touches.first! as UITouch!
         let touchPercent = anyTouch.locationInView(self.view).x / screenWidth
@@ -191,7 +191,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     
     /*
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-    didPressTakeAnother()
+        didPressTakeAnother()
     }
-    */
+*/
 }

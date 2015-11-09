@@ -14,7 +14,15 @@
 		DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */; };
 		DCAF53D51BF0594A005AB5DD /* Care4WoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */; };
 		DCAF53E01BF0594A005AB5DD /* Care4WoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */; };
-		DCAF53F01BF05ABA005AB5DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */; };
+		DCAF53F21BF05EEF005AB5DD /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53F11BF05EEF005AB5DD /* View1.swift */; };
+		DCAF53F41BF05EF4005AB5DD /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F31BF05EF4005AB5DD /* View1.xib */; };
+		DCAF53F61BF05F01005AB5DD /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F51BF05F01005AB5DD /* CameraView.xib */; };
+		DCAF53F81BF05F06005AB5DD /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */; };
+		DCAF53FA1BF05F0B005AB5DD /* AnalysisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */; };
+		DCAF53FE1BF05F19005AB5DD /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FB1BF05F19005AB5DD /* camera_icon.png */; };
+		DCAF53FF1BF05F19005AB5DD /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FC1BF05F19005AB5DD /* x.png */; };
+		DCAF54001BF05F19005AB5DD /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FD1BF05F19005AB5DD /* save.png */; };
+		DCAF54021BF05F4E005AB5DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,15 @@
 		DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care4WoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care4WoundsUITests.swift; sourceTree = "<group>"; };
 		DCAF53E11BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DCAF53F11BF05EEF005AB5DD /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		DCAF53F31BF05EF4005AB5DD /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
+		DCAF53F51BF05F01005AB5DD /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalysisView.xib; sourceTree = "<group>"; };
+		DCAF53FB1BF05F19005AB5DD /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
+		DCAF53FC1BF05F19005AB5DD /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		DCAF53FD1BF05F19005AB5DD /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +95,6 @@
 		DCAF53B31BF0594A005AB5DD = {
 			isa = PBXGroup;
 			children = (
-				DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */,
 				DCAF53BE1BF0594A005AB5DD /* Care4Wounds */,
 				DCAF53D31BF0594A005AB5DD /* Care4WoundsTests */,
 				DCAF53DE1BF0594A005AB5DD /* Care4WoundsUITests */,
@@ -103,9 +118,18 @@
 				DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */,
 				DCAF53C11BF0594A005AB5DD /* ViewController.swift */,
 				DCAF53C31BF0594A005AB5DD /* Main.storyboard */,
+				DCAF53F11BF05EEF005AB5DD /* View1.swift */,
+				DCAF53F31BF05EF4005AB5DD /* View1.xib */,
+				DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */,
+				DCAF53F51BF05F01005AB5DD /* CameraView.xib */,
+				DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */,
+				DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */,
 				DCAF53C61BF0594A005AB5DD /* Assets.xcassets */,
 				DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */,
 				DCAF53CB1BF0594A005AB5DD /* Info.plist */,
+				DCAF53FB1BF05F19005AB5DD /* camera_icon.png */,
+				DCAF53FC1BF05F19005AB5DD /* x.png */,
+				DCAF53FD1BF05F19005AB5DD /* save.png */,
 			);
 			path = Care4Wounds;
 			sourceTree = "<group>";
@@ -232,8 +256,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAF53FF1BF05F19005AB5DD /* x.png in Resources */,
 				DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */,
+				DCAF54001BF05F19005AB5DD /* save.png in Resources */,
+				DCAF53FE1BF05F19005AB5DD /* camera_icon.png in Resources */,
 				DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */,
+				DCAF53F61BF05F01005AB5DD /* CameraView.xib in Resources */,
+				DCAF53F41BF05EF4005AB5DD /* View1.xib in Resources */,
+				DCAF53FA1BF05F0B005AB5DD /* AnalysisView.xib in Resources */,
 				DCAF53C51BF0594A005AB5DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +291,9 @@
 			files = (
 				DCAF53C21BF0594A005AB5DD /* ViewController.swift in Sources */,
 				DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */,
-				DCAF53F01BF05ABA005AB5DD /* CameraViewController.swift in Sources */,
+				DCAF53F21BF05EEF005AB5DD /* View1.swift in Sources */,
+				DCAF53F81BF05F06005AB5DD /* AnalysisViewController.swift in Sources */,
+				DCAF54021BF05F4E005AB5DD /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
