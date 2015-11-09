@@ -16,7 +16,6 @@ class WoundTableVC : UIViewController, UITableViewDataSource, UITableViewDelegat
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        wounds = CoreDataHelper.fetchEntities("Wound", predicate: nil) as! [Wound]
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -25,6 +24,12 @@ class WoundTableVC : UIViewController, UITableViewDataSource, UITableViewDelegat
         let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("toAddWoundVC"))
         navigationItem.rightBarButtonItem = rightBarButtonItem
         navigationItem.title = "Wounds"
+    }
+    
+    override func viewWillAppear(animated : Bool) {
+        super.viewWillAppear(animated)
+        wounds = CoreDataHelper.fetchEntities("Wound", predicate: nil) as! [Wound]
+        tableView.reloadData()
     }
     
     // MARK: UITableViewDataSource

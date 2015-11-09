@@ -15,7 +15,10 @@ import CoreData
 extension WoundPhoto {
 
     @NSManaged var levelOfPain: NSNumber?
-    @NSManaged var photo: NSObject?
+    @NSManaged var photoImage: NSData?
+    @NSManaged var woundSize: NSNumber?
+    @NSManaged var timeTaken: NSDate?
+    @NSManaged var miscComments: String?
     @NSManaged var wound: Wound?
 
 }

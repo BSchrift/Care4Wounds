@@ -15,6 +15,8 @@ import CoreData
 extension Wound {
 
     @NSManaged var bodyLocation: String?
+    @NSManaged var initialWoundSize: NSNumber?
+    @NSManaged var date: NSDate?
     @NSManaged var woundPhotos: NSSet?
 
 }
