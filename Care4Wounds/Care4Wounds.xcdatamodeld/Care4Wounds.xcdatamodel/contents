@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Wound" representedClassName=".Wound" syncable="YES">
+        <attribute name="bodyLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="woundPhotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WoundPhoto" inverseName="wound" inverseEntity="WoundPhoto" syncable="YES"/>
+    </entity>
+    <entity name="WoundPhoto" representedClassName=".WoundPhoto" syncable="YES">
+        <attribute name="levelOfPain" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="10" defaultValueString="0" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="wound" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Wound" inverseName="woundPhotos" inverseEntity="Wound" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Wound" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="WoundPhoto" positionX="133" positionY="0" width="128" height="88"/>
+    </elements>
+</model>

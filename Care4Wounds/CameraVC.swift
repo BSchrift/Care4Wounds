@@ -1,12 +1,16 @@
 //
-//  CameraViewController.swift
-//  Med App Jam
+//  CameraVC.swift
+//  Care4Wounds
+//
+//  Created by David Furman on 11/9/15.
+//  Copyright © 2015 UCI App Jam Team 5. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class CameraViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class CameraVC : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    var wound : Wound!
     
     var captureDevice : AVCaptureDevice?
     var captureSession : AVCaptureSession?
@@ -32,24 +36,25 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        // Handle situations in which the app may not have been given permission to use the camera.
         /*
         let authorizationStatus = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
         switch authorizationStatus {
         case .NotDetermined:
-            // permission dialog not yet presented, request authorization
-            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo,
-                completionHandler: { (granted:Bool) -> Void in
-                    if granted {
-                        // go ahead
-                    }
-                    else {
-                        // user denied, nothing much to do
-                    }
-            })
+        // permission dialog not yet presented, request authorization
+        AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo,
+        completionHandler: { (granted:Bool) -> Void in
+        if granted {
+        // go ahead
+        }
+        else {
+        // user denied, nothing much to do
+        }
+        })
         case .Authorized:
-            // go ahead
+        // go ahead
         case .Denied, .Restricted:
-            // the user explicitly denied camera usage or is not allowed to access the camera devices
+        // the user explicitly denied camera usage or is not allowed to access the camera devices
         }
         */
         
@@ -112,7 +117,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     let screenWidth = UIScreen.mainScreen().bounds.size.width
-
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let anyTouch : UITouch = touches.first! as UITouch!
         let touchPercent = anyTouch.locationInView(self.view).x / screenWidth
@@ -161,17 +166,18 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func scanImageButtonPressed(sender: AnyObject) {
-        NSBundle.mainBundle().loadNibNamed("AnalysisView", owner: self, options: nil)
+        let photoAnalysisVC = PhotoAnalysisVC(nibName: "PhotoAnalysisVC", bundle: nil)
+        photoAnalysisVC.wound = wound
+        navigationController?.pushViewController(photoAnalysisVC, animated: true);
     }
     
     @IBAction func saveButtonPressed(sender: UIButton) {
         UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-        let alert : UIAlertView = UIAlertView()
-        alert.title = "Saved!"
-        alert.message = "Your picture was saved to Camera Roll"
-        alert.delegate = self
-        alert.addButtonWithTitle("Ok")
-        alert.show()
+        //
+        let alert : UIAlertController = UIAlertController(title: "Saved!", message: "Your picture was saved to Camera Roll", preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "Ok", style: .Cancel, handler: {(action) in})
+        alert.addAction(okAction)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     var didTakePhoto = Bool()
@@ -191,7 +197,7 @@ class CameraViewController : UIViewController, UIImagePickerControllerDelegate, 
     
     /*
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        didPressTakeAnother()
+    didPressTakeAnother()
     }
-*/
+    */
 }

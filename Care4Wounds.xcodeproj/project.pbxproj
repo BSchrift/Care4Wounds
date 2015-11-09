@@ -8,21 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */; };
-		DCAF53C21BF0594A005AB5DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53C11BF0594A005AB5DD /* ViewController.swift */; };
-		DCAF53C51BF0594A005AB5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C31BF0594A005AB5DD /* Main.storyboard */; };
 		DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C61BF0594A005AB5DD /* Assets.xcassets */; };
 		DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */; };
 		DCAF53D51BF0594A005AB5DD /* Care4WoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */; };
 		DCAF53E01BF0594A005AB5DD /* Care4WoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */; };
-		DCAF53F21BF05EEF005AB5DD /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53F11BF05EEF005AB5DD /* View1.swift */; };
-		DCAF53F41BF05EF4005AB5DD /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F31BF05EF4005AB5DD /* View1.xib */; };
-		DCAF53F61BF05F01005AB5DD /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F51BF05F01005AB5DD /* CameraView.xib */; };
-		DCAF53F81BF05F06005AB5DD /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */; };
-		DCAF53FA1BF05F0B005AB5DD /* AnalysisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */; };
-		DCAF53FE1BF05F19005AB5DD /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FB1BF05F19005AB5DD /* camera_icon.png */; };
-		DCAF53FF1BF05F19005AB5DD /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FC1BF05F19005AB5DD /* x.png */; };
-		DCAF54001BF05F19005AB5DD /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53FD1BF05F19005AB5DD /* save.png */; };
-		DCAF54021BF05F4E005AB5DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */; };
+		DCB341921BF154670014F89B /* AddWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341901BF154670014F89B /* AddWoundVC.swift */; };
+		DCB341931BF154670014F89B /* AddWoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341911BF154670014F89B /* AddWoundVC.xib */; };
+		DCB3419A1BF154870014F89B /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341941BF154870014F89B /* camera_icon.png */; };
+		DCB3419B1BF154870014F89B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341951BF154870014F89B /* CameraVC.swift */; };
+		DCB3419C1BF154870014F89B /* CameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341961BF154870014F89B /* CameraVC.xib */; };
+		DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341971BF154870014F89B /* CoreDataHelper.swift */; };
+		DCB341B31BF154900014F89B /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A11BF154900014F89B /* PhotoDetailVC.swift */; };
+		DCB341B41BF154900014F89B /* PhotoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A21BF154900014F89B /* PhotoDetailVC.xib */; };
+		DCB341B51BF154900014F89B /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A31BF154900014F89B /* PhotosVC.swift */; };
+		DCB341B61BF154900014F89B /* PhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A41BF154900014F89B /* PhotosVC.xib */; };
+		DCB341B71BF154900014F89B /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A51BF154900014F89B /* save.png */; };
+		DCB341B81BF154900014F89B /* Wound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A61BF154900014F89B /* Wound.swift */; };
+		DCB341B91BF154900014F89B /* Wound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */; };
+		DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A81BF154900014F89B /* WoundDataVC.swift */; };
+		DCB341BB1BF154900014F89B /* WoundDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A91BF154900014F89B /* WoundDataVC.xib */; };
+		DCB341BC1BF154900014F89B /* WoundOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */; };
+		DCB341BD1BF154900014F89B /* WoundOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */; };
+		DCB341BE1BF154900014F89B /* WoundPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AC1BF154900014F89B /* WoundPhoto.swift */; };
+		DCB341BF1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */; };
+		DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AE1BF154900014F89B /* WoundTableVC.swift */; };
+		DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341AF1BF154900014F89B /* WoundTableVC.xib */; };
+		DCB341C21BF154900014F89B /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341B01BF154900014F89B /* x.png */; };
+		DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */; };
+		DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */; };
+		DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */; };
+		DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */; };
+		DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +61,6 @@
 /* Begin PBXFileReference section */
 		DCAF53BC1BF0594A005AB5DD /* Care4Wounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care4Wounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCAF53C11BF0594A005AB5DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCAF53C41BF0594A005AB5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCAF53C61BF0594A005AB5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCAF53C91BF0594A005AB5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAF53CB1BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +70,33 @@
 		DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care4WoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care4WoundsUITests.swift; sourceTree = "<group>"; };
 		DCAF53E11BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCAF53F11BF05EEF005AB5DD /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
-		DCAF53F31BF05EF4005AB5DD /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View1.xib; sourceTree = "<group>"; };
-		DCAF53F51BF05F01005AB5DD /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
-		DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
-		DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalysisView.xib; sourceTree = "<group>"; };
-		DCAF53FB1BF05F19005AB5DD /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
-		DCAF53FC1BF05F19005AB5DD /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
-		DCAF53FD1BF05F19005AB5DD /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
-		DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DCB341901BF154670014F89B /* AddWoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWoundVC.swift; sourceTree = "<group>"; };
+		DCB341911BF154670014F89B /* AddWoundVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWoundVC.xib; sourceTree = "<group>"; };
+		DCB341941BF154870014F89B /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
+		DCB341951BF154870014F89B /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		DCB341961BF154870014F89B /* CameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraVC.xib; sourceTree = "<group>"; };
+		DCB341971BF154870014F89B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		DCB341A11BF154900014F89B /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
+		DCB341A21BF154900014F89B /* PhotoDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailVC.xib; sourceTree = "<group>"; };
+		DCB341A31BF154900014F89B /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		DCB341A41BF154900014F89B /* PhotosVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosVC.xib; sourceTree = "<group>"; };
+		DCB341A51BF154900014F89B /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		DCB341A61BF154900014F89B /* Wound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wound.swift; sourceTree = "<group>"; };
+		DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wound+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCB341A81BF154900014F89B /* WoundDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundDataVC.swift; sourceTree = "<group>"; };
+		DCB341A91BF154900014F89B /* WoundDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundDataVC.xib; sourceTree = "<group>"; };
+		DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundOptionsVC.swift; sourceTree = "<group>"; };
+		DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundOptionsVC.xib; sourceTree = "<group>"; };
+		DCB341AC1BF154900014F89B /* WoundPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundPhoto.swift; sourceTree = "<group>"; };
+		DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WoundPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCB341AE1BF154900014F89B /* WoundTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundTableVC.swift; sourceTree = "<group>"; };
+		DCB341AF1BF154900014F89B /* WoundTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundTableVC.xib; sourceTree = "<group>"; };
+		DCB341B01BF154900014F89B /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisVC.swift; sourceTree = "<group>"; };
+		DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAnalysisVC.xib; sourceTree = "<group>"; };
+		DCB341D21BF155B30014F89B /* Care4Wounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Care4Wounds.xcdatamodel; sourceTree = "<group>"; };
+		DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
+		DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,20 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */,
-				DCAF53C11BF0594A005AB5DD /* ViewController.swift */,
-				DCAF53C31BF0594A005AB5DD /* Main.storyboard */,
-				DCAF53F11BF05EEF005AB5DD /* View1.swift */,
-				DCAF53F31BF05EF4005AB5DD /* View1.xib */,
-				DCAF54011BF05F4E005AB5DD /* CameraViewController.swift */,
-				DCAF53F51BF05F01005AB5DD /* CameraView.xib */,
-				DCAF53F71BF05F06005AB5DD /* AnalysisViewController.swift */,
-				DCAF53F91BF05F0B005AB5DD /* AnalysisView.xib */,
+				DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */,
+				DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */,
+				DCB341D01BF155460014F89B /* Wound Management */,
+				DCB341CF1BF155390014F89B /* Core Data */,
+				DCB341C31BF154A60014F89B /* Assets */,
 				DCAF53C61BF0594A005AB5DD /* Assets.xcassets */,
 				DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */,
 				DCAF53CB1BF0594A005AB5DD /* Info.plist */,
-				DCAF53FB1BF05F19005AB5DD /* camera_icon.png */,
-				DCAF53FC1BF05F19005AB5DD /* x.png */,
-				DCAF53FD1BF05F19005AB5DD /* save.png */,
 			);
 			path = Care4Wounds;
 			sourceTree = "<group>";
@@ -150,6 +176,60 @@
 				DCAF53E11BF0594A005AB5DD /* Info.plist */,
 			);
 			path = Care4WoundsUITests;
+			sourceTree = "<group>";
+		};
+		DCB341C31BF154A60014F89B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DCB341A51BF154900014F89B /* save.png */,
+				DCB341B01BF154900014F89B /* x.png */,
+				DCB341941BF154870014F89B /* camera_icon.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DCB341CE1BF1551D0014F89B /* Wound Options */ = {
+			isa = PBXGroup;
+			children = (
+				DCB341A11BF154900014F89B /* PhotoDetailVC.swift */,
+				DCB341A21BF154900014F89B /* PhotoDetailVC.xib */,
+				DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */,
+				DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */,
+				DCB341A31BF154900014F89B /* PhotosVC.swift */,
+				DCB341A41BF154900014F89B /* PhotosVC.xib */,
+				DCB341951BF154870014F89B /* CameraVC.swift */,
+				DCB341961BF154870014F89B /* CameraVC.xib */,
+				DCB341A81BF154900014F89B /* WoundDataVC.swift */,
+				DCB341A91BF154900014F89B /* WoundDataVC.xib */,
+			);
+			name = "Wound Options";
+			sourceTree = "<group>";
+		};
+		DCB341CF1BF155390014F89B /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DCB341A61BF154900014F89B /* Wound.swift */,
+				DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */,
+				DCB341AC1BF154900014F89B /* WoundPhoto.swift */,
+				DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */,
+				DCB341971BF154870014F89B /* CoreDataHelper.swift */,
+				DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		DCB341D01BF155460014F89B /* Wound Management */ = {
+			isa = PBXGroup;
+			children = (
+				DCB341AE1BF154900014F89B /* WoundTableVC.swift */,
+				DCB341AF1BF154900014F89B /* WoundTableVC.xib */,
+				DCB341901BF154670014F89B /* AddWoundVC.swift */,
+				DCB341911BF154670014F89B /* AddWoundVC.xib */,
+				DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */,
+				DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */,
+				DCB341CE1BF1551D0014F89B /* Wound Options */,
+			);
+			name = "Wound Management";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,15 +336,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAF53FF1BF05F19005AB5DD /* x.png in Resources */,
+				DCB341B41BF154900014F89B /* PhotoDetailVC.xib in Resources */,
 				DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */,
-				DCAF54001BF05F19005AB5DD /* save.png in Resources */,
-				DCAF53FE1BF05F19005AB5DD /* camera_icon.png in Resources */,
+				DCB341C21BF154900014F89B /* x.png in Resources */,
+				DCB341BB1BF154900014F89B /* WoundDataVC.xib in Resources */,
+				DCB3419C1BF154870014F89B /* CameraVC.xib in Resources */,
+				DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */,
+				DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */,
+				DCB3419A1BF154870014F89B /* camera_icon.png in Resources */,
+				DCB341BD1BF154900014F89B /* WoundOptionsVC.xib in Resources */,
 				DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */,
-				DCAF53F61BF05F01005AB5DD /* CameraView.xib in Resources */,
-				DCAF53F41BF05EF4005AB5DD /* View1.xib in Resources */,
-				DCAF53FA1BF05F0B005AB5DD /* AnalysisView.xib in Resources */,
-				DCAF53C51BF0594A005AB5DD /* Main.storyboard in Resources */,
+				DCB341B71BF154900014F89B /* save.png in Resources */,
+				DCB341931BF154670014F89B /* AddWoundVC.xib in Resources */,
+				DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */,
+				DCB341B61BF154900014F89B /* PhotosVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,11 +374,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAF53C21BF0594A005AB5DD /* ViewController.swift in Sources */,
+				DCB341B51BF154900014F89B /* PhotosVC.swift in Sources */,
+				DCB341BE1BF154900014F89B /* WoundPhoto.swift in Sources */,
+				DCB341BC1BF154900014F89B /* WoundOptionsVC.swift in Sources */,
+				DCB341BF1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */,
+				DCB341B91BF154900014F89B /* Wound+CoreDataProperties.swift in Sources */,
+				DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */,
+				DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */,
+				DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */,
+				DCB341921BF154670014F89B /* AddWoundVC.swift in Sources */,
+				DCB341B81BF154900014F89B /* Wound.swift in Sources */,
+				DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */,
+				DCB341B31BF154900014F89B /* PhotoDetailVC.swift in Sources */,
 				DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */,
-				DCAF53F21BF05EEF005AB5DD /* View1.swift in Sources */,
-				DCAF53F81BF05F06005AB5DD /* AnalysisViewController.swift in Sources */,
-				DCAF54021BF05F4E005AB5DD /* CameraViewController.swift in Sources */,
+				DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */,
+				DCB3419B1BF154870014F89B /* CameraVC.swift in Sources */,
+				DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DCAF53C31BF0594A005AB5DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCAF53C41BF0594A005AB5DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,9 +524,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Care4Wounds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -447,9 +537,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Care4Wounds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -541,6 +633,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCB341D21BF155B30014F89B /* Care4Wounds.xcdatamodel */,
+			);
+			currentVersion = DCB341D21BF155B30014F89B /* Care4Wounds.xcdatamodel */;
+			path = Care4Wounds.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DCAF53B41BF0594A005AB5DD /* Project object */;
 }
