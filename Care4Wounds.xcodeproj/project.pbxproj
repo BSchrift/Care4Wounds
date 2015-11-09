@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */; };
+		DCAF53C21BF0594A005AB5DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53C11BF0594A005AB5DD /* ViewController.swift */; };
+		DCAF53C51BF0594A005AB5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C31BF0594A005AB5DD /* Main.storyboard */; };
+		DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C61BF0594A005AB5DD /* Assets.xcassets */; };
+		DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */; };
+		DCAF53D51BF0594A005AB5DD /* Care4WoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */; };
+		DCAF53E01BF0594A005AB5DD /* Care4WoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */; };
+		DCAF53F01BF05ABA005AB5DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCAF53D11BF0594A005AB5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAF53B41BF0594A005AB5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAF53BB1BF0594A005AB5DD;
+			remoteInfo = Care4Wounds;
+		};
+		DCAF53DC1BF0594A005AB5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAF53B41BF0594A005AB5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAF53BB1BF0594A005AB5DD;
+			remoteInfo = Care4Wounds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCAF53BC1BF0594A005AB5DD /* Care4Wounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care4Wounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCAF53C11BF0594A005AB5DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCAF53C41BF0594A005AB5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCAF53C61BF0594A005AB5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAF53C91BF0594A005AB5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCAF53CB1BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAF53D01BF0594A005AB5DD /* Care4WoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care4WoundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care4WoundsTests.swift; sourceTree = "<group>"; };
+		DCAF53D61BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care4WoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care4WoundsUITests.swift; sourceTree = "<group>"; };
+		DCAF53E11BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCAF53B91BF0594A005AB5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53CD1BF0594A005AB5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53D81BF0594A005AB5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCAF53B31BF0594A005AB5DD = {
+			isa = PBXGroup;
+			children = (
+				DCAF53EF1BF05ABA005AB5DD /* CameraViewController.swift */,
+				DCAF53BE1BF0594A005AB5DD /* Care4Wounds */,
+				DCAF53D31BF0594A005AB5DD /* Care4WoundsTests */,
+				DCAF53DE1BF0594A005AB5DD /* Care4WoundsUITests */,
+				DCAF53BD1BF0594A005AB5DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCAF53BD1BF0594A005AB5DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCAF53BC1BF0594A005AB5DD /* Care4Wounds.app */,
+				DCAF53D01BF0594A005AB5DD /* Care4WoundsTests.xctest */,
+				DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCAF53BE1BF0594A005AB5DD /* Care4Wounds */ = {
+			isa = PBXGroup;
+			children = (
+				DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */,
+				DCAF53C11BF0594A005AB5DD /* ViewController.swift */,
+				DCAF53C31BF0594A005AB5DD /* Main.storyboard */,
+				DCAF53C61BF0594A005AB5DD /* Assets.xcassets */,
+				DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */,
+				DCAF53CB1BF0594A005AB5DD /* Info.plist */,
+			);
+			path = Care4Wounds;
+			sourceTree = "<group>";
+		};
+		DCAF53D31BF0594A005AB5DD /* Care4WoundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */,
+				DCAF53D61BF0594A005AB5DD /* Info.plist */,
+			);
+			path = Care4WoundsTests;
+			sourceTree = "<group>";
+		};
+		DCAF53DE1BF0594A005AB5DD /* Care4WoundsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */,
+				DCAF53E11BF0594A005AB5DD /* Info.plist */,
+			);
+			path = Care4WoundsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCAF53BB1BF0594A005AB5DD /* Care4Wounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAF53E41BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4Wounds" */;
+			buildPhases = (
+				DCAF53B81BF0594A005AB5DD /* Sources */,
+				DCAF53B91BF0594A005AB5DD /* Frameworks */,
+				DCAF53BA1BF0594A005AB5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Care4Wounds;
+			productName = Care4Wounds;
+			productReference = DCAF53BC1BF0594A005AB5DD /* Care4Wounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCAF53CF1BF0594A005AB5DD /* Care4WoundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAF53E71BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4WoundsTests" */;
+			buildPhases = (
+				DCAF53CC1BF0594A005AB5DD /* Sources */,
+				DCAF53CD1BF0594A005AB5DD /* Frameworks */,
+				DCAF53CE1BF0594A005AB5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAF53D21BF0594A005AB5DD /* PBXTargetDependency */,
+			);
+			name = Care4WoundsTests;
+			productName = Care4WoundsTests;
+			productReference = DCAF53D01BF0594A005AB5DD /* Care4WoundsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCAF53DA1BF0594A005AB5DD /* Care4WoundsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAF53EA1BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4WoundsUITests" */;
+			buildPhases = (
+				DCAF53D71BF0594A005AB5DD /* Sources */,
+				DCAF53D81BF0594A005AB5DD /* Frameworks */,
+				DCAF53D91BF0594A005AB5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAF53DD1BF0594A005AB5DD /* PBXTargetDependency */,
+			);
+			name = Care4WoundsUITests;
+			productName = Care4WoundsUITests;
+			productReference = DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCAF53B41BF0594A005AB5DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "UCI App Jam Team 5";
+				TargetAttributes = {
+					DCAF53BB1BF0594A005AB5DD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					DCAF53CF1BF0594A005AB5DD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DCAF53BB1BF0594A005AB5DD;
+					};
+					DCAF53DA1BF0594A005AB5DD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = DCAF53BB1BF0594A005AB5DD;
+					};
+				};
+			};
+			buildConfigurationList = DCAF53B71BF0594A005AB5DD /* Build configuration list for PBXProject "Care4Wounds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCAF53B31BF0594A005AB5DD;
+			productRefGroup = DCAF53BD1BF0594A005AB5DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCAF53BB1BF0594A005AB5DD /* Care4Wounds */,
+				DCAF53CF1BF0594A005AB5DD /* Care4WoundsTests */,
+				DCAF53DA1BF0594A005AB5DD /* Care4WoundsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCAF53BA1BF0594A005AB5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */,
+				DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */,
+				DCAF53C51BF0594A005AB5DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53CE1BF0594A005AB5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53D91BF0594A005AB5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCAF53B81BF0594A005AB5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAF53C21BF0594A005AB5DD /* ViewController.swift in Sources */,
+				DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */,
+				DCAF53F01BF05ABA005AB5DD /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53CC1BF0594A005AB5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAF53D51BF0594A005AB5DD /* Care4WoundsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAF53D71BF0594A005AB5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAF53E01BF0594A005AB5DD /* Care4WoundsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCAF53D21BF0594A005AB5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAF53BB1BF0594A005AB5DD /* Care4Wounds */;
+			targetProxy = DCAF53D11BF0594A005AB5DD /* PBXContainerItemProxy */;
+		};
+		DCAF53DD1BF0594A005AB5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAF53BB1BF0594A005AB5DD /* Care4Wounds */;
+			targetProxy = DCAF53DC1BF0594A005AB5DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCAF53C31BF0594A005AB5DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAF53C41BF0594A005AB5DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAF53C91BF0594A005AB5DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCAF53E21BF0594A005AB5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCAF53E31BF0594A005AB5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCAF53E51BF0594A005AB5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Care4Wounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCAF53E61BF0594A005AB5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Care4Wounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCAF53E81BF0594A005AB5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Care4WoundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4WoundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Care4Wounds.app/Care4Wounds";
+			};
+			name = Debug;
+		};
+		DCAF53E91BF0594A005AB5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Care4WoundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4WoundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Care4Wounds.app/Care4Wounds";
+			};
+			name = Release;
+		};
+		DCAF53EB1BF0594A005AB5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Care4WoundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4WoundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Care4Wounds;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DCAF53EC1BF0594A005AB5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Care4WoundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4WoundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Care4Wounds;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCAF53B71BF0594A005AB5DD /* Build configuration list for PBXProject "Care4Wounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAF53E21BF0594A005AB5DD /* Debug */,
+				DCAF53E31BF0594A005AB5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAF53E41BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4Wounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAF53E51BF0594A005AB5DD /* Debug */,
+				DCAF53E61BF0594A005AB5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAF53E71BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4WoundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAF53E81BF0594A005AB5DD /* Debug */,
+				DCAF53E91BF0594A005AB5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAF53EA1BF0594A005AB5DD /* Build configuration list for PBXNativeTarget "Care4WoundsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAF53EB1BF0594A005AB5DD /* Debug */,
+				DCAF53EC1BF0594A005AB5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCAF53B41BF0594A005AB5DD /* Project object */;
+}
