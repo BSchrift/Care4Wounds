@@ -131,7 +131,6 @@ class CameraVC : UIViewController, UIImagePickerControllerDelegate, UINavigation
     }
     
     func didPressTakePhoto(){
-        
         if let videoConnection = stillImageOutput?.connectionWithMediaType(AVMediaTypeVideo){
             videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
             stillImageOutput?.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler: {
@@ -168,16 +167,8 @@ class CameraVC : UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBAction func scanImageButtonPressed(sender: AnyObject) {
         let photoAnalysisVC = PhotoAnalysisVC(nibName: "PhotoAnalysisVC", bundle: nil)
         photoAnalysisVC.wound = wound
-        navigationController?.pushViewController(photoAnalysisVC, animated: true);
-    }
-    
-    @IBAction func saveButtonPressed(sender: UIButton) {
-        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-        //
-        let alert : UIAlertController = UIAlertController(title: "Saved!", message: "Your picture was saved to Camera Roll", preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "Ok", style: .Cancel, handler: {(action) in})
-        alert.addAction(okAction)
-        self.presentViewController(alert, animated: true, completion: nil)
+        photoAnalysisVC.image = self.image
+        navigationController!.pushViewController(photoAnalysisVC, animated: true);
     }
     
     var didTakePhoto = Bool()
