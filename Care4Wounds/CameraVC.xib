@@ -9,7 +9,6 @@
                 <outlet property="cameraButton" destination="Hw1-n7-5Ju" id="1Th-pR-BbU"/>
                 <outlet property="cameraView" destination="Bpj-Li-RgH" id="xuM-o1-Msa"/>
                 <outlet property="cancelButton" destination="24i-CT-5NU" id="EdR-zB-y9Y"/>
-                <outlet property="saveButton" destination="jyJ-NM-7Ls" id="bMS-5c-bJE"/>
                 <outlet property="scanImageButton" destination="1cM-Ni-rW5" id="Mwv-Tf-PHW"/>
                 <outlet property="tempImageView" destination="87L-iZ-2fK" id="eVq-zo-vfz"/>
                 <outlet property="view" destination="1Nx-FC-DZi" id="wkH-0V-BGf"/>
@@ -53,14 +52,6 @@
                         <action selector="scanImageButtonPressed:" destination="-1" eventType="touchUpInside" id="C98-q3-o2m"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyJ-NM-7Ls">
-                    <rect key="frame" x="49" y="374" width="50" height="50"/>
-                    <animations/>
-                    <state key="normal" title="Save Image" image="save.png"/>
-                    <connections>
-                        <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="txS-km-Iwq"/>
-                    </connections>
-                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="0.33818916510000002" blue="0.31293818470000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -82,7 +73,6 @@
     </objects>
     <resources>
         <image name="camera_icon.png" width="252" height="252"/>
-        <image name="save.png" width="394" height="381"/>
         <image name="x.png" width="512" height="512"/>
     </resources>
 </document>
