@@ -11,10 +11,18 @@ import UIKit
 class AddWoundVC : UIViewController {
     @IBOutlet weak var bodyLocationField: UITextField!
     
-    @IBAction func addWoundPressed(sender: UIButton) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: Selector("donePressed"))
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+        navigationItem.title = "Add Wound"
+    }
+    
+    func donePressed() {
         if (bodyLocationField.text != "") {
             // Inserts and returns a new Wound
-            let wound : Wound = CoreDataHelper.insertManagedObject("Wound") as! Wound
+            let wound = CoreDataHelper.insertManagedObject("Wound") as! Wound
             wound.bodyLocation = bodyLocationField.text
             CoreDataHelper.saveData()
             navigationController?.popViewControllerAnimated(true)
