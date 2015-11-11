@@ -9,6 +9,6 @@
 import UIKit
 
 class PhotoDetailVC: UIViewController {
-    var wound : Wound!
-
+    var wound : Wound! //This is put here in case it's needed.
+    var woundPhoto : WoundPhoto!
 }

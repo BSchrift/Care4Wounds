@@ -13,15 +13,13 @@ class CoreDataHelper : NSObject {
 	
 	static var moc : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 	
-	class func doesSimilarEntityExistInManagedObjectContext(entity: String, predicate: NSPredicate?) -> Bool {
-		return false
-	}
-	
+    /** Inserts a managed object into the managed object context moc, then returns it. This insertion must be saved using saveData() for the change to persist when the application closes! */
 	static func insertManagedObject(className: String) -> NSManagedObject {
 		let managedObject = NSEntityDescription.insertNewObjectForEntityForName(className, inManagedObjectContext: moc) as NSManagedObject
 		return managedObject
 	}
 	
+    /** Returns an array of managed objects. If an NSPredicate is supplied, the array will be filtered based upon the predicate. */
 	static func fetchEntities(className: String, predicate: NSPredicate?) -> [NSManagedObject] {
 		let fetchRequest = NSFetchRequest()
 		
@@ -43,6 +41,7 @@ class CoreDataHelper : NSObject {
 		}
 	}
 	
+    /** Returns the number of entities that exist matching a certain entity name and, if supplied, a predicate. */
 	static func fetchNumberOfEntities(className: String, managedObjectContext: NSManagedObjectContext, predicate: NSPredicate?) -> Int {
 		let fetchRequest = NSFetchRequest()
 		fetchRequest.resultType = .CountResultType
@@ -65,11 +64,10 @@ class CoreDataHelper : NSObject {
 		}
 	}
     
-    
+    /** Saves the managed object context by applying any changes that have been made to the managed object context. */
     static func saveData() -> Bool {
         do {
             try moc.save()
-            print("TEST")
             return true
         } catch {
             print("ERROR saving the managed object context in method saveData().")

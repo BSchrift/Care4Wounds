@@ -10,4 +10,7 @@ import UIKit
 
 class WoundDataVC: UIViewController {
     var wound : Wound!
+    
+    @IBOutlet weak var firstPicture: UIImageView!
+    @IBOutlet weak var currentPicture: UIImageView!
 }

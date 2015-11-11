@@ -12,7 +12,6 @@ class MainMenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Care4Wounds"
     }
     
     @IBAction func doctorManagementPressed(sender: UIButton) {

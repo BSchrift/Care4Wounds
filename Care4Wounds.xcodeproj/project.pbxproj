@@ -24,19 +24,22 @@
 		DCB341B61BF154900014F89B /* PhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A41BF154900014F89B /* PhotosVC.xib */; };
 		DCB341B71BF154900014F89B /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A51BF154900014F89B /* save.png */; };
 		DCB341B81BF154900014F89B /* Wound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A61BF154900014F89B /* Wound.swift */; };
-		DCB341B91BF154900014F89B /* Wound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */; };
 		DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A81BF154900014F89B /* WoundDataVC.swift */; };
 		DCB341BB1BF154900014F89B /* WoundDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A91BF154900014F89B /* WoundDataVC.xib */; };
 		DCB341BC1BF154900014F89B /* WoundOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */; };
 		DCB341BD1BF154900014F89B /* WoundOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */; };
 		DCB341BE1BF154900014F89B /* WoundPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AC1BF154900014F89B /* WoundPhoto.swift */; };
-		DCB341BF1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */; };
 		DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AE1BF154900014F89B /* WoundTableVC.swift */; };
 		DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341AF1BF154900014F89B /* WoundTableVC.xib */; };
 		DCB341C21BF154900014F89B /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341B01BF154900014F89B /* x.png */; };
 		DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */; };
 		DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */; };
 		DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */; };
+		DCB341DB1BF160610014F89B /* Wound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341DA1BF160610014F89B /* Wound+CoreDataProperties.swift */; };
+		DCB341E11BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */; };
+		DCB341E51BF17D3C0014F89B /* Mind Map Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */; };
+		DCB341E71BF195B30014F89B /* wound.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E61BF195B30014F89B /* wound.png */; };
+		DCB341E91BF1979B0014F89B /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E81BF1979B0014F89B /* doctor.png */; };
 		DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */; };
 		DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */; };
 /* End PBXBuildFile section */
@@ -82,19 +85,22 @@
 		DCB341A41BF154900014F89B /* PhotosVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosVC.xib; sourceTree = "<group>"; };
 		DCB341A51BF154900014F89B /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		DCB341A61BF154900014F89B /* Wound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wound.swift; sourceTree = "<group>"; };
-		DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCB341A81BF154900014F89B /* WoundDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundDataVC.swift; sourceTree = "<group>"; };
 		DCB341A91BF154900014F89B /* WoundDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundDataVC.xib; sourceTree = "<group>"; };
 		DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundOptionsVC.swift; sourceTree = "<group>"; };
 		DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundOptionsVC.xib; sourceTree = "<group>"; };
 		DCB341AC1BF154900014F89B /* WoundPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundPhoto.swift; sourceTree = "<group>"; };
-		DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WoundPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCB341AE1BF154900014F89B /* WoundTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundTableVC.swift; sourceTree = "<group>"; };
 		DCB341AF1BF154900014F89B /* WoundTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundTableVC.xib; sourceTree = "<group>"; };
 		DCB341B01BF154900014F89B /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisVC.swift; sourceTree = "<group>"; };
 		DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAnalysisVC.xib; sourceTree = "<group>"; };
 		DCB341D21BF155B30014F89B /* Care4Wounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Care4Wounds.xcdatamodel; sourceTree = "<group>"; };
+		DCB341DA1BF160610014F89B /* Wound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wound+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WoundPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mind Map Filled-100.png"; sourceTree = "<group>"; };
+		DCB341E61BF195B30014F89B /* wound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wound.png; sourceTree = "<group>"; };
+		DCB341E81BF1979B0014F89B /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
 		DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,9 +187,12 @@
 		DCB341C31BF154A60014F89B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */,
 				DCB341A51BF154900014F89B /* save.png */,
 				DCB341B01BF154900014F89B /* x.png */,
 				DCB341941BF154870014F89B /* camera_icon.png */,
+				DCB341E81BF1979B0014F89B /* doctor.png */,
+				DCB341E61BF195B30014F89B /* wound.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -209,9 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				DCB341A61BF154900014F89B /* Wound.swift */,
-				DCB341A71BF154900014F89B /* Wound+CoreDataProperties.swift */,
+				DCB341DA1BF160610014F89B /* Wound+CoreDataProperties.swift */,
 				DCB341AC1BF154900014F89B /* WoundPhoto.swift */,
-				DCB341AD1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift */,
+				DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */,
 				DCB341971BF154870014F89B /* CoreDataHelper.swift */,
 				DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */,
 			);
@@ -336,14 +345,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB341E51BF17D3C0014F89B /* Mind Map Filled-100.png in Resources */,
 				DCB341B41BF154900014F89B /* PhotoDetailVC.xib in Resources */,
 				DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */,
+				DCB341E91BF1979B0014F89B /* doctor.png in Resources */,
 				DCB341C21BF154900014F89B /* x.png in Resources */,
 				DCB341BB1BF154900014F89B /* WoundDataVC.xib in Resources */,
 				DCB3419C1BF154870014F89B /* CameraVC.xib in Resources */,
 				DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */,
 				DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */,
 				DCB3419A1BF154870014F89B /* camera_icon.png in Resources */,
+				DCB341E71BF195B30014F89B /* wound.png in Resources */,
 				DCB341BD1BF154900014F89B /* WoundOptionsVC.xib in Resources */,
 				DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */,
 				DCB341B71BF154900014F89B /* save.png in Resources */,
@@ -376,12 +388,12 @@
 			files = (
 				DCB341B51BF154900014F89B /* PhotosVC.swift in Sources */,
 				DCB341BE1BF154900014F89B /* WoundPhoto.swift in Sources */,
+				DCB341E11BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */,
 				DCB341BC1BF154900014F89B /* WoundOptionsVC.swift in Sources */,
-				DCB341BF1BF154900014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */,
-				DCB341B91BF154900014F89B /* Wound+CoreDataProperties.swift in Sources */,
 				DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */,
 				DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */,
 				DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */,
+				DCB341DB1BF160610014F89B /* Wound+CoreDataProperties.swift in Sources */,
 				DCB341921BF154670014F89B /* AddWoundVC.swift in Sources */,
 				DCB341B81BF154900014F89B /* Wound.swift in Sources */,
 				DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */,

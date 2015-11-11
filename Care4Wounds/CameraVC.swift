@@ -20,11 +20,11 @@ class CameraVC : UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet var cameraView: UIView!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var scanImageButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scanImageButton.enabled = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -153,7 +153,6 @@ class CameraVC : UIViewController, UIImagePickerControllerDelegate, UINavigation
         cameraButton.hidden = !takingPhotos
         tempImageView.hidden = takingPhotos
         cancelButton.hidden = takingPhotos
-        saveButton.hidden = takingPhotos
     }
     
     @IBAction func cancelButtonPressed(sender: UIButton) {
