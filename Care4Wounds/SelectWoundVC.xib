@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectWoundVC" customModule="Care4Wounds" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerView" destination="XGm-94-7hF" id="Duf-56-SmV"/>
+                <outlet property="selectButton" destination="4wP-Kr-uUD" id="XIs-DL-d8h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-94-7hF">
+                    <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select Wound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-vu-ci5">
+                    <rect key="frame" x="186" y="104" width="228" height="21"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wP-Kr-uUD">
+                    <rect key="frame" x="251" y="416" width="98" height="48"/>
+                    <color key="backgroundColor" red="0.84103073204419887" green="0.84103073204419887" blue="0.84103073204419887" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Select">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectWoundPressed:" destination="-1" eventType="touchUpInside" id="fbk-QR-WYX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5VD-vu-ci5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7k1-ZL-Hta"/>
+                <constraint firstItem="4wP-Kr-uUD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BVn-EU-L71"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -11,6 +11,8 @@ import UIKit
 class MainMenuVC: UIViewController {
     
     @IBAction func doctorManagementPressed(sender: UIButton) {
+      let selectWoundVC = SelectWoundVC(nibName: "SelectWoundVC", bundle: nil)
+      navigationController!.pushViewController(selectWoundVC, animated: true)
         
     }
     @IBAction func woundManagementPressed(sender: UIButton) {
