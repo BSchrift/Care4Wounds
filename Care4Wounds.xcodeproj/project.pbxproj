@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1A05D91BF426A80057CA6F /* SymptomsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1A05D81BF426A80057CA6F /* SymptomsVC.xib */; };
+		DC1A05DB1BF426B40057CA6F /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A05DA1BF426B40057CA6F /* SymptomsVC.swift */; };
+		DC63A2DF1BF402E0006AE2C4 /* stack_of_photos_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2DE1BF402E0006AE2C4 /* stack_of_photos_filled.png */; };
+		DC63A2E11BF40359006AE2C4 /* compact_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E01BF40359006AE2C4 /* compact_camera.png */; };
+		DC63A2E31BF403BD006AE2C4 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E21BF403BD006AE2C4 /* camera.png */; };
+		DC63A2E51BF40401006AE2C4 /* area_chart.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E41BF40401006AE2C4 /* area_chart.png */; };
+		DC63A2E71BF40443006AE2C4 /* treatment_plan.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E61BF40443006AE2C4 /* treatment_plan.png */; };
 		DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */; };
 		DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C61BF0594A005AB5DD /* Assets.xcassets */; };
 		DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */; };
 		DCAF53D51BF0594A005AB5DD /* Care4WoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53D41BF0594A005AB5DD /* Care4WoundsTests.swift */; };
 		DCAF53E01BF0594A005AB5DD /* Care4WoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */; };
-		DCB341921BF154670014F89B /* AddWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341901BF154670014F89B /* AddWoundVC.swift */; };
-		DCB341931BF154670014F89B /* AddWoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341911BF154670014F89B /* AddWoundVC.xib */; };
 		DCB3419A1BF154870014F89B /* camera_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341941BF154870014F89B /* camera_icon.png */; };
-		DCB3419B1BF154870014F89B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341951BF154870014F89B /* CameraVC.swift */; };
-		DCB3419C1BF154870014F89B /* CameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341961BF154870014F89B /* CameraVC.xib */; };
 		DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341971BF154870014F89B /* CoreDataHelper.swift */; };
 		DCB341B31BF154900014F89B /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341A11BF154900014F89B /* PhotoDetailVC.swift */; };
 		DCB341B41BF154900014F89B /* PhotoDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341A21BF154900014F89B /* PhotoDetailVC.xib */; };
@@ -32,14 +35,13 @@
 		DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341AE1BF154900014F89B /* WoundTableVC.swift */; };
 		DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341AF1BF154900014F89B /* WoundTableVC.xib */; };
 		DCB341C21BF154900014F89B /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341B01BF154900014F89B /* x.png */; };
-		DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */; };
-		DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */; };
 		DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCB341D11BF155B30014F89B /* Care4Wounds.xcdatamodeld */; };
 		DCB341DB1BF160610014F89B /* Wound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341DA1BF160610014F89B /* Wound+CoreDataProperties.swift */; };
 		DCB341E11BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */; };
 		DCB341E51BF17D3C0014F89B /* Mind Map Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */; };
 		DCB341E71BF195B30014F89B /* wound.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E61BF195B30014F89B /* wound.png */; };
 		DCB341E91BF1979B0014F89B /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E81BF1979B0014F89B /* doctor.png */; };
+		DCE7D9721BF55C1600537CDA /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE7D9711BF55C1600537CDA /* error.png */; };
 		DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */; };
 		DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC1A05D81BF426A80057CA6F /* SymptomsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SymptomsVC.xib; sourceTree = "<group>"; };
+		DC1A05DA1BF426B40057CA6F /* SymptomsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
+		DC63A2DE1BF402E0006AE2C4 /* stack_of_photos_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack_of_photos_filled.png; sourceTree = "<group>"; };
+		DC63A2E01BF40359006AE2C4 /* compact_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compact_camera.png; sourceTree = "<group>"; };
+		DC63A2E21BF403BD006AE2C4 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		DC63A2E41BF40401006AE2C4 /* area_chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = area_chart.png; sourceTree = "<group>"; };
+		DC63A2E61BF40443006AE2C4 /* treatment_plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treatment_plan.png; sourceTree = "<group>"; };
 		DCAF53BC1BF0594A005AB5DD /* Care4Wounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Care4Wounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF53BF1BF0594A005AB5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAF53C61BF0594A005AB5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,11 +82,7 @@
 		DCAF53DB1BF0594A005AB5DD /* Care4WoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Care4WoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF53DF1BF0594A005AB5DD /* Care4WoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care4WoundsUITests.swift; sourceTree = "<group>"; };
 		DCAF53E11BF0594A005AB5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCB341901BF154670014F89B /* AddWoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWoundVC.swift; sourceTree = "<group>"; };
-		DCB341911BF154670014F89B /* AddWoundVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWoundVC.xib; sourceTree = "<group>"; };
 		DCB341941BF154870014F89B /* camera_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_icon.png; sourceTree = "<group>"; };
-		DCB341951BF154870014F89B /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
-		DCB341961BF154870014F89B /* CameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraVC.xib; sourceTree = "<group>"; };
 		DCB341971BF154870014F89B /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		DCB341A11BF154900014F89B /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
 		DCB341A21BF154900014F89B /* PhotoDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailVC.xib; sourceTree = "<group>"; };
@@ -93,14 +98,13 @@
 		DCB341AE1BF154900014F89B /* WoundTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundTableVC.swift; sourceTree = "<group>"; };
 		DCB341AF1BF154900014F89B /* WoundTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundTableVC.xib; sourceTree = "<group>"; };
 		DCB341B01BF154900014F89B /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
-		DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAnalysisVC.swift; sourceTree = "<group>"; };
-		DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAnalysisVC.xib; sourceTree = "<group>"; };
 		DCB341D21BF155B30014F89B /* Care4Wounds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Care4Wounds.xcdatamodel; sourceTree = "<group>"; };
 		DCB341DA1BF160610014F89B /* Wound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WoundPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mind Map Filled-100.png"; sourceTree = "<group>"; };
 		DCB341E61BF195B30014F89B /* wound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wound.png; sourceTree = "<group>"; };
 		DCB341E81BF1979B0014F89B /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		DCE7D9711BF55C1600537CDA /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,10 +191,16 @@
 		DCB341C31BF154A60014F89B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DCE7D9711BF55C1600537CDA /* error.png */,
+				DC63A2E41BF40401006AE2C4 /* area_chart.png */,
+				DC63A2E61BF40443006AE2C4 /* treatment_plan.png */,
+				DC63A2E21BF403BD006AE2C4 /* camera.png */,
+				DC63A2E01BF40359006AE2C4 /* compact_camera.png */,
 				DCB341E41BF17D3C0014F89B /* Mind Map Filled-100.png */,
 				DCB341A51BF154900014F89B /* save.png */,
 				DCB341B01BF154900014F89B /* x.png */,
 				DCB341941BF154870014F89B /* camera_icon.png */,
+				DC63A2DE1BF402E0006AE2C4 /* stack_of_photos_filled.png */,
 				DCB341E81BF1979B0014F89B /* doctor.png */,
 				DCB341E61BF195B30014F89B /* wound.png */,
 			);
@@ -202,12 +212,10 @@
 			children = (
 				DCB341A11BF154900014F89B /* PhotoDetailVC.swift */,
 				DCB341A21BF154900014F89B /* PhotoDetailVC.xib */,
-				DCB341CA1BF1550F0014F89B /* PhotoAnalysisVC.swift */,
-				DCB341CB1BF1550F0014F89B /* PhotoAnalysisVC.xib */,
+				DC1A05DA1BF426B40057CA6F /* SymptomsVC.swift */,
+				DC1A05D81BF426A80057CA6F /* SymptomsVC.xib */,
 				DCB341A31BF154900014F89B /* PhotosVC.swift */,
 				DCB341A41BF154900014F89B /* PhotosVC.xib */,
-				DCB341951BF154870014F89B /* CameraVC.swift */,
-				DCB341961BF154870014F89B /* CameraVC.xib */,
 				DCB341A81BF154900014F89B /* WoundDataVC.swift */,
 				DCB341A91BF154900014F89B /* WoundDataVC.xib */,
 			);
@@ -232,8 +240,6 @@
 			children = (
 				DCB341AE1BF154900014F89B /* WoundTableVC.swift */,
 				DCB341AF1BF154900014F89B /* WoundTableVC.xib */,
-				DCB341901BF154670014F89B /* AddWoundVC.swift */,
-				DCB341911BF154670014F89B /* AddWoundVC.xib */,
 				DCB341AA1BF154900014F89B /* WoundOptionsVC.swift */,
 				DCB341AB1BF154900014F89B /* WoundOptionsVC.xib */,
 				DCB341CE1BF1551D0014F89B /* Wound Options */,
@@ -346,20 +352,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB341E51BF17D3C0014F89B /* Mind Map Filled-100.png in Resources */,
+				DC1A05D91BF426A80057CA6F /* SymptomsVC.xib in Resources */,
 				DCB341B41BF154900014F89B /* PhotoDetailVC.xib in Resources */,
 				DCAF53CA1BF0594A005AB5DD /* LaunchScreen.storyboard in Resources */,
 				DCB341E91BF1979B0014F89B /* doctor.png in Resources */,
 				DCB341C21BF154900014F89B /* x.png in Resources */,
 				DCB341BB1BF154900014F89B /* WoundDataVC.xib in Resources */,
-				DCB3419C1BF154870014F89B /* CameraVC.xib in Resources */,
+				DC63A2DF1BF402E0006AE2C4 /* stack_of_photos_filled.png in Resources */,
+				DC63A2E71BF40443006AE2C4 /* treatment_plan.png in Resources */,
+				DC63A2E51BF40401006AE2C4 /* area_chart.png in Resources */,
 				DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */,
-				DCB341CD1BF1550F0014F89B /* PhotoAnalysisVC.xib in Resources */,
 				DCB3419A1BF154870014F89B /* camera_icon.png in Resources */,
 				DCB341E71BF195B30014F89B /* wound.png in Resources */,
+				DC63A2E11BF40359006AE2C4 /* compact_camera.png in Resources */,
 				DCB341BD1BF154900014F89B /* WoundOptionsVC.xib in Resources */,
+				DCE7D9721BF55C1600537CDA /* error.png in Resources */,
+				DC63A2E31BF403BD006AE2C4 /* camera.png in Resources */,
 				DCAF53C71BF0594A005AB5DD /* Assets.xcassets in Resources */,
 				DCB341B71BF154900014F89B /* save.png in Resources */,
-				DCB341931BF154670014F89B /* AddWoundVC.xib in Resources */,
 				DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */,
 				DCB341B61BF154900014F89B /* PhotosVC.xib in Resources */,
 			);
@@ -392,16 +402,14 @@
 				DCB341BC1BF154900014F89B /* WoundOptionsVC.swift in Sources */,
 				DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */,
 				DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */,
-				DCB341CC1BF1550F0014F89B /* PhotoAnalysisVC.swift in Sources */,
 				DCB341DB1BF160610014F89B /* Wound+CoreDataProperties.swift in Sources */,
-				DCB341921BF154670014F89B /* AddWoundVC.swift in Sources */,
 				DCB341B81BF154900014F89B /* Wound.swift in Sources */,
 				DCB341C01BF154900014F89B /* WoundTableVC.swift in Sources */,
 				DCB341B31BF154900014F89B /* PhotoDetailVC.swift in Sources */,
 				DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */,
 				DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */,
-				DCB3419B1BF154870014F89B /* CameraVC.swift in Sources */,
 				DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */,
+				DC1A05DB1BF426B40057CA6F /* SymptomsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -553,7 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

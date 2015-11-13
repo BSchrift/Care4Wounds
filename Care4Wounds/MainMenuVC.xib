@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuVC" customModule="Care4Wounds" customModuleProvider="target">
@@ -11,43 +11,57 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="a3r-ZA-N8O">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VWb-k7-JEo">
-                    <rect key="frame" x="73" y="277" width="175" height="157"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-k7-JEo">
+                    <rect key="frame" x="213" y="278" width="175" height="157"/>
                     <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="157" id="7PO-Du-olV"/>
+                        <constraint firstAttribute="width" constant="175" id="f0r-oz-1GJ"/>
+                    </constraints>
                     <state key="normal" title="Wound Management" image="wound.png"/>
                     <connections>
                         <action selector="woundManagementPressed:" destination="-1" eventType="touchUpInside" id="ka0-my-vjN"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Physician" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q0p-yN-WSI">
-                    <rect key="frame" x="91" y="248" width="138" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Physician" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0p-yN-WSI">
+                    <rect key="frame" x="231" y="249" width="138" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ggt-1f-0FN">
-                    <rect key="frame" x="73" y="65" width="175" height="175"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggt-1f-0FN">
+                    <rect key="frame" x="213" y="66" width="175" height="175"/>
                     <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="qge-mR-TQg"/>
+                    </constraints>
                     <state key="normal" title="Button" image="doctor.png"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I1G-1o-cZw">
-                    <rect key="frame" x="129" y="442" width="63" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1G-1o-cZw">
+                    <rect key="frame" x="269" y="443" width="63" height="21"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="trailing" secondItem="Ggt-1f-0FN" secondAttribute="trailing" id="7Zb-XJ-xs7"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="top" secondItem="a3r-ZA-N8O" secondAttribute="top" constant="278" id="IxT-fG-OuL"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="centerX" secondItem="I1G-1o-cZw" secondAttribute="centerX" id="Zfk-ta-9w7"/>
+                <constraint firstItem="I1G-1o-cZw" firstAttribute="top" secondItem="VWb-k7-JEo" secondAttribute="bottom" constant="8" symbolic="YES" id="hND-ZD-wu3"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="centerX" secondItem="q0p-yN-WSI" secondAttribute="centerX" id="jdX-pC-ccX"/>
+                <constraint firstItem="q0p-yN-WSI" firstAttribute="top" secondItem="Ggt-1f-0FN" secondAttribute="bottom" constant="8" symbolic="YES" id="kvw-ls-0NW"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="top" secondItem="q0p-yN-WSI" secondAttribute="bottom" constant="8" symbolic="YES" id="shl-e0-GmP"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="centerX" secondItem="a3r-ZA-N8O" secondAttribute="centerX" id="wzT-vz-hkh"/>
+                <constraint firstItem="VWb-k7-JEo" firstAttribute="leading" secondItem="Ggt-1f-0FN" secondAttribute="leading" id="zLM-2D-Q1J"/>
+            </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="269.5" y="424"/>
         </view>

@@ -11,4 +11,7 @@ import UIKit
 class PhotosVC: UIViewController {
     var wound : Wound!
 
+    override func viewDidLoad() {
+        navigationItem.title = "Wound Photos"
+    }
 }

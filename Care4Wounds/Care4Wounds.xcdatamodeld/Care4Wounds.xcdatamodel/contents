@@ -7,15 +7,23 @@
         <relationship name="woundPhotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WoundPhoto" inverseName="wound" inverseEntity="WoundPhoto" syncable="YES"/>
     </entity>
     <entity name="WoundPhoto" representedClassName=".WoundPhoto" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hasBadOdor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasFever" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasFluidDrainage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasPain" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasPus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasRedness" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasSwelling" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasWarmth" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="levelOfConcern" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="levelOfPain" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="10" defaultValueString="0" syncable="YES"/>
-        <attribute name="miscComments" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photoImage" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="timeTaken" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="woundSize" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="woundLength" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="wound" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Wound" inverseName="woundPhotos" inverseEntity="Wound" syncable="YES"/>
     </entity>
     <elements>
         <element name="Wound" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="WoundPhoto" positionX="133" positionY="0" width="128" height="135"/>
+        <element name="WoundPhoto" positionX="133" positionY="0" width="128" height="255"/>
     </elements>
 </model>

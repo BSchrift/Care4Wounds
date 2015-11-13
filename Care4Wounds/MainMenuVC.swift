@@ -10,10 +10,6 @@ import UIKit
 
 class MainMenuVC: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func doctorManagementPressed(sender: UIButton) {
         
     }

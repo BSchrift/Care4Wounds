@@ -42,10 +42,10 @@ class CoreDataHelper : NSObject {
 	}
 	
     /** Returns the number of entities that exist matching a certain entity name and, if supplied, a predicate. */
-	static func fetchNumberOfEntities(className: String, managedObjectContext: NSManagedObjectContext, predicate: NSPredicate?) -> Int {
+	static func fetchNumberOfEntities(className: String, predicate: NSPredicate?) -> Int {
 		let fetchRequest = NSFetchRequest()
 		fetchRequest.resultType = .CountResultType
-		let entityDescription = NSEntityDescription.entityForName(className, inManagedObjectContext: managedObjectContext)
+		let entityDescription = NSEntityDescription.entityForName(className, inManagedObjectContext: moc)
 		
 		fetchRequest.entity = entityDescription
 		
@@ -56,13 +56,19 @@ class CoreDataHelper : NSObject {
 		fetchRequest.returnsObjectsAsFaults = false
 		
 		do {
-			let countArray = try managedObjectContext.executeFetchRequest(fetchRequest)
+			let countArray = try moc.executeFetchRequest(fetchRequest)
 			let count = countArray[0].integerValue!
 			return count
 		} catch {
 			fatalError("Error executing fetch request")
 		}
 	}
+    
+    /** Deletes the object from the managed object context and saves. */
+    static func deleteManagedObject(managedObject : NSManagedObject) {
+        moc.deleteObject(managedObject)
+        saveData()
+    }
     
     /** Saves the managed object context by applying any changes that have been made to the managed object context. */
     static func saveData() -> Bool {
@@ -73,5 +79,10 @@ class CoreDataHelper : NSObject {
             print("ERROR saving the managed object context in method saveData().")
             return false
         }
+    }
+    
+    /** Undoes any unsaved changes to the managed object context. */
+    static func rollBack() {
+        moc.rollback()
     }
 }

@@ -13,4 +13,23 @@ class WoundDataVC: UIViewController {
     
     @IBOutlet weak var firstPicture: UIImageView!
     @IBOutlet weak var currentPicture: UIImageView!
+    
+    var firstWoundPhoto : WoundPhoto?
+    var currentWoundPhoto : WoundPhoto?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.title = "Wound Data"
+        
+        loadPhotos()
+    }
+    
+    func loadPhotos() {
+        let earliestPhoto : WoundPhoto? = Wound.getPhotoBasedOnTime(wound, basedOnRecency: true)
+        let latestPhoto : WoundPhoto? = Wound.getPhotoBasedOnTime(wound, basedOnRecency: false)
+        
+        firstPicture.image   = (earliestPhoto != nil) ? UIImage(data: (earliestPhoto!.photoImage!)) : UIImage(named: "error.png")
+        currentPicture.image = (latestPhoto != nil)   ? UIImage(data: (latestPhoto!.photoImage!))   : UIImage(named: "error.png")
+    }
 }
