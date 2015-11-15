@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WoundOptionsVC" customModule="Care4Wounds" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="bYv-sH-Bgy" id="h1q-yu-Ipk"/>
+                <outlet property="viewDataButton" destination="QRg-qe-WVM" id="Xmh-5o-0sJ"/>
                 <outlet property="viewPhotosButton" destination="aIp-Y7-Xsg" id="PmE-hy-UHW"/>
+                <outlet property="viewSymptomsButton" destination="fkh-or-sAP" id="wmR-kF-pt8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,99 +17,85 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONR-A5-U9i">
-                    <rect key="frame" x="200" y="68" width="200" height="90"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-GJ-EUF">
+                    <rect key="frame" x="187" y="65" width="227" height="535"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONR-A5-U9i">
+                            <rect key="frame" x="0.0" y="0.0" width="227" height="134"/>
+                            <animations/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" image="camera.png">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Take Photo">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="-1" eventType="touchUpInside" id="byu-g0-Fjb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-Y7-Xsg">
+                            <rect key="frame" x="0.0" y="134" width="227" height="134"/>
+                            <animations/>
+                            <state key="normal" image="stack_of_photos_filled.png">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="View Photos">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="photosButtonPressed:" destination="-1" eventType="touchUpInside" id="uvB-yM-F2N"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRg-qe-WVM">
+                            <rect key="frame" x="0.0" y="268" width="227" height="133"/>
+                            <animations/>
+                            <state key="normal" image="area_chart.png">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="View Data">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="dataButtonPressed:" destination="-1" eventType="touchUpInside" id="Ddn-t1-bv3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkh-or-sAP">
+                            <rect key="frame" x="0.0" y="401" width="227" height="134"/>
+                            <animations/>
+                            <state key="normal" image="treatment_plan.png">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="View Symptoms">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="symptomsButtonPressed:" destination="-1" eventType="touchUpInside" id="20x-7o-bNY"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="vrA-4O-rv0"/>
-                    </constraints>
-                    <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                    <state key="normal" image="camera.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Take Photo">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <connections>
-                        <action selector="cameraButtonPressed:" destination="-1" eventType="touchUpInside" id="byu-g0-Fjb"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRg-qe-WVM">
-                    <rect key="frame" x="200" y="284" width="200" height="90"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="rcV-Nh-Dgi"/>
-                    </constraints>
-                    <state key="normal" image="area_chart.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="View Data">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <connections>
-                        <action selector="dataButtonPressed:" destination="-1" eventType="touchUpInside" id="Ddn-t1-bv3"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-Y7-Xsg">
-                    <rect key="frame" x="200" y="176" width="200" height="90"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="leM-Dg-YBA"/>
-                    </constraints>
-                    <state key="normal" image="stack_of_photos_filled.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="View Photos">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <connections>
-                        <action selector="photosButtonPressed:" destination="-1" eventType="touchUpInside" id="uvB-yM-F2N"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkh-or-sAP">
-                    <rect key="frame" x="200" y="392" width="200" height="90"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="90" id="9T1-2U-mFN"/>
-                    </constraints>
-                    <state key="normal" image="treatment_plan.png">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Symptoms">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                    </state>
-                    <connections>
-                        <action selector="symptomsButtonPressed:" destination="-1" eventType="touchUpInside" id="20x-7o-bNY"/>
-                    </connections>
-                </button>
+                </stackView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="fkh-or-sAP" firstAttribute="top" secondItem="QRg-qe-WVM" secondAttribute="bottom" constant="18" id="0ww-Ys-i1C"/>
-                <constraint firstItem="fkh-or-sAP" firstAttribute="centerX" secondItem="bYv-sH-Bgy" secondAttribute="centerX" id="1OX-VH-rKG"/>
-                <constraint firstItem="aIp-Y7-Xsg" firstAttribute="leading" secondItem="QRg-qe-WVM" secondAttribute="leading" id="4rw-4v-KNg"/>
-                <constraint firstItem="aIp-Y7-Xsg" firstAttribute="centerX" secondItem="bYv-sH-Bgy" secondAttribute="centerX" id="4yF-tA-Gqm"/>
-                <constraint firstItem="aIp-Y7-Xsg" firstAttribute="top" secondItem="ONR-A5-U9i" secondAttribute="bottom" constant="18" id="Cpd-dX-B71"/>
-                <constraint firstItem="QRg-qe-WVM" firstAttribute="centerX" secondItem="bYv-sH-Bgy" secondAttribute="centerX" id="Kcu-J3-R13"/>
-                <constraint firstItem="ONR-A5-U9i" firstAttribute="top" secondItem="bYv-sH-Bgy" secondAttribute="top" constant="68" id="MHc-Z3-gBD"/>
-                <constraint firstItem="fkh-or-sAP" firstAttribute="leading" secondItem="QRg-qe-WVM" secondAttribute="leading" id="OzX-Ia-wjL"/>
-                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="fkh-or-sAP" secondAttribute="bottom" constant="118" id="XJc-Eg-GDS"/>
-                <constraint firstItem="ONR-A5-U9i" firstAttribute="centerX" secondItem="bYv-sH-Bgy" secondAttribute="centerX" id="ax1-zZ-OzA"/>
-                <constraint firstItem="QRg-qe-WVM" firstAttribute="top" secondItem="aIp-Y7-Xsg" secondAttribute="bottom" constant="18" id="uAC-6G-WsF"/>
-                <constraint firstItem="ONR-A5-U9i" firstAttribute="leading" secondItem="aIp-Y7-Xsg" secondAttribute="leading" id="xXT-H1-LiP"/>
+                <constraint firstItem="sDg-GJ-EUF" firstAttribute="centerX" secondItem="bYv-sH-Bgy" secondAttribute="centerX" id="4Bj-JH-Gsc"/>
+                <constraint firstItem="sDg-GJ-EUF" firstAttribute="top" secondItem="bYv-sH-Bgy" secondAttribute="top" constant="65" id="cEi-J2-vfm"/>
+                <constraint firstAttribute="bottom" secondItem="sDg-GJ-EUF" secondAttribute="bottom" id="m4o-MV-0XU"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>
