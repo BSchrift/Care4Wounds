@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBBB55721BF684440004D32F /* happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBBB556F1BF684440004D32F /* happy.jpg */; settings = {ASSET_TAGS = (); }; };
-		CBBB55731BF684440004D32F /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55701BF684440004D32F /* sad.png */; settings = {ASSET_TAGS = (); }; };
-		CBBB55741BF684440004D32F /* unsure.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55711BF684440004D32F /* unsure.png */; settings = {ASSET_TAGS = (); }; };
-		CBBB55771BF687180004D32F /* ConcernLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55751BF687180004D32F /* ConcernLevelVC.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB55781BF687180004D32F /* ConcernLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55761BF687180004D32F /* ConcernLevelVC.xib */; settings = {ASSET_TAGS = (); }; };
-		CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55791BF688370004D32F /* SelectWoundVC.swift */; settings = {ASSET_TAGS = (); }; };
-		CBBB557C1BF688370004D32F /* SelectWoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB557A1BF688370004D32F /* SelectWoundVC.xib */; settings = {ASSET_TAGS = (); }; };
+		CBBB55721BF684440004D32F /* happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBBB556F1BF684440004D32F /* happy.jpg */; };
+		CBBB55731BF684440004D32F /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55701BF684440004D32F /* sad.png */; };
+		CBBB55741BF684440004D32F /* unsure.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55711BF684440004D32F /* unsure.png */; };
+		CBBB55771BF687180004D32F /* ConcernLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55751BF687180004D32F /* ConcernLevelVC.swift */; };
+		CBBB55781BF687180004D32F /* ConcernLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55761BF687180004D32F /* ConcernLevelVC.xib */; };
+		CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55791BF688370004D32F /* SelectWoundVC.swift */; };
+		CBBB557C1BF688370004D32F /* SelectWoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB557A1BF688370004D32F /* SelectWoundVC.xib */; };
 		DC1A05D91BF426A80057CA6F /* SymptomsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1A05D81BF426A80057CA6F /* SymptomsVC.xib */; };
 		DC1A05DB1BF426B40057CA6F /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A05DA1BF426B40057CA6F /* SymptomsVC.swift */; };
 		DC63A2DF1BF402E0006AE2C4 /* stack_of_photos_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2DE1BF402E0006AE2C4 /* stack_of_photos_filled.png */; };
@@ -344,6 +344,7 @@
 				TargetAttributes = {
 					DCAF53BB1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = H24HQB63J2;
 					};
 					DCAF53CF1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
@@ -579,11 +580,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Care4Wounds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -592,11 +596,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Care4Wounds/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Team5.Care4Wounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

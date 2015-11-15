@@ -77,12 +77,14 @@ class WoundTableVC : UIViewController, UITableViewDataSource, UITableViewDelegat
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func createWound() -> Wound {
-        let wound = CoreDataHelper.insertManagedObject("Wound") as! Wound
-        wound.bodyLocation = self.newWoundLocation
-        return wound
-    }
-    
+  func createWound() -> Wound {
+    let entities = CoreDataHelper.fetchNumberOfEntities("Wound", predicate: nil)
+    let wound = CoreDataHelper.insertManagedObject("Wound") as! Wound
+    wound.bodyLocation = self.newWoundLocation
+    CoreDataHelper.saveData()
+    return wound
+  }
+  
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let woundOptionsVC = WoundOptionsVC(nibName: "WoundOptionsVC", bundle: nil)
         woundOptionsVC.wound = wounds[indexPath.row]
