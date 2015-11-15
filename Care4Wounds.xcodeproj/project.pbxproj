@@ -10,6 +10,9 @@
 		CB85A66F1BF817DB006664EB /* happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB85A66C1BF817DB006664EB /* happy.jpg */; };
 		CB85A6701BF817DB006664EB /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = CB85A66D1BF817DB006664EB /* sad.png */; };
 		CB85A6711BF817DB006664EB /* unsure.png in Resources */ = {isa = PBXBuildFile; fileRef = CB85A66E1BF817DB006664EB /* unsure.png */; };
+		CB85A67C1BF82483006664EB /* FluidDrainageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */; };
+		CB85A67D1BF82483006664EB /* FluidDrainageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */; };
+		CB85A67F1BF827E3006664EB /* DoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85A67E1BF827E3006664EB /* DoctorInfo.swift */; };
 		CBBB55771BF687180004D32F /* ConcernLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55751BF687180004D32F /* ConcernLevelVC.swift */; };
 		CBBB55781BF687180004D32F /* ConcernLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55761BF687180004D32F /* ConcernLevelVC.xib */; };
 		CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55791BF688370004D32F /* SelectWoundVC.swift */; };
@@ -74,6 +77,9 @@
 		CB85A66C1BF817DB006664EB /* happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = happy.jpg; path = smileys/happy.jpg; sourceTree = "<group>"; };
 		CB85A66D1BF817DB006664EB /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sad.png; path = smileys/sad.png; sourceTree = "<group>"; };
 		CB85A66E1BF817DB006664EB /* unsure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unsure.png; path = smileys/unsure.png; sourceTree = "<group>"; };
+		CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidDrainageVC.swift; sourceTree = "<group>"; };
+		CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FluidDrainageVC.xib; sourceTree = "<group>"; };
+		CB85A67E1BF827E3006664EB /* DoctorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
 		CBBB55751BF687180004D32F /* ConcernLevelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernLevelVC.swift; sourceTree = "<group>"; };
 		CBBB55761BF687180004D32F /* ConcernLevelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernLevelVC.xib; sourceTree = "<group>"; };
 		CBBB55791BF688370004D32F /* SelectWoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectWoundVC.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				CBBB557A1BF688370004D32F /* SelectWoundVC.xib */,
 				CBBB55751BF687180004D32F /* ConcernLevelVC.swift */,
 				CBBB55761BF687180004D32F /* ConcernLevelVC.xib */,
+				CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */,
+				CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */,
+				CB85A67E1BF827E3006664EB /* DoctorInfo.swift */,
 			);
 			name = "Contact Physician";
 			sourceTree = "<group>";
@@ -382,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBB55781BF687180004D32F /* ConcernLevelVC.xib in Resources */,
+				CB85A67D1BF82483006664EB /* FluidDrainageVC.xib in Resources */,
 				DCB341E51BF17D3C0014F89B /* Mind Map Filled-100.png in Resources */,
 				DC1A05D91BF426A80057CA6F /* SymptomsVC.xib in Resources */,
 				CB85A6711BF817DB006664EB /* unsure.png in Resources */,
@@ -435,6 +445,7 @@
 				DC4229811BF80E6A00824E31 /* WoundOptionsVC.swift in Sources */,
 				DCB341BE1BF154900014F89B /* WoundPhoto.swift in Sources */,
 				DCB341E11BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */,
+				CB85A67F1BF827E3006664EB /* DoctorInfo.swift in Sources */,
 				CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */,
 				DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */,
 				DCB341BA1BF154900014F89B /* WoundDataVC.swift in Sources */,
@@ -446,6 +457,7 @@
 				DCAF53C01BF0594A005AB5DD /* AppDelegate.swift in Sources */,
 				DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */,
 				DCB341D31BF155B30014F89B /* Care4Wounds.xcdatamodeld in Sources */,
+				CB85A67C1BF82483006664EB /* FluidDrainageVC.swift in Sources */,
 				DC1A05DB1BF426B40057CA6F /* SymptomsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
