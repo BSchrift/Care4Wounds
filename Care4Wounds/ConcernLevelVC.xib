@@ -17,26 +17,44 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-KC-Jfh">
                     <rect key="frame" x="345" y="205" width="62" height="58"/>
                     <state key="normal" title="Button" image="happy.jpg"/>
+                    <connections>
+                        <action selector="unconcernedPressed:" destination="-1" eventType="touchUpInside" id="xep-JP-AlW"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-3A-kFb">
                     <rect key="frame" x="345" y="271" width="62" height="58"/>
                     <state key="normal" title="Button" image="unsure.png"/>
+                    <connections>
+                        <action selector="worriedPressed:" destination="-1" eventType="touchUpInside" id="UWk-kO-UpP"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8I-hK-yZ1">
                     <rect key="frame" x="345" y="337" width="62" height="58"/>
                     <state key="normal" title="Button" image="sad.png"/>
+                    <connections>
+                        <action selector="veryConcernedPressed:" destination="-1" eventType="touchUpInside" id="Y7w-pr-0Sw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTf-5w-GMk">
                     <rect key="frame" x="193" y="219" width="134" height="30"/>
                     <state key="normal" title="Unconcerned"/>
+                    <connections>
+                        <action selector="unconcernedPressed:" destination="-1" eventType="touchUpInside" id="yBu-WT-VkI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10g-74-WvA">
                     <rect key="frame" x="193" y="285" width="134" height="30"/>
                     <state key="normal" title="A little worried"/>
+                    <connections>
+                        <action selector="worriedPressed:" destination="-1" eventType="touchUpInside" id="z1H-vR-r8P"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fR-zs-dEB">
                     <rect key="frame" x="193" y="351" width="134" height="30"/>
                     <state key="normal" title="Very concerned"/>
+                    <connections>
+                        <action selector="veryConcernedPressed:" destination="-1" eventType="touchUpInside" id="CSO-ph-b7S"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="How concerned are you about your wound today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUC-rC-o67">
                     <rect key="frame" x="110" y="73" width="380" height="71"/>

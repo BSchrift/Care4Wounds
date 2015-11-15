@@ -9,14 +9,45 @@
 import UIKit
 
 class ConcernLevelVC: UIViewController {
-  
-  var wound = Wound()
-  
-  enum concernLevel {
+  enum concernLevels {
     case unconcerned
     case worried
     case veryconcerned
   }
+  
+  var wound: Wound?
+  var concernLevel:concernLevels
+  
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    wound = nil
+    concernLevel = concernLevels.unconcerned
+    super.init(nibName:nibNameOrNil,bundle:nibBundleOrNil)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    wound = nil
+    concernLevel = concernLevels.unconcerned
+    super.init(coder:aDecoder)
+  }
+  
+  @IBAction func veryConcernedPressed(sender: UIButton) {
+    concernLevel = concernLevels.veryconcerned
+    transitionToFluidDrainage()
+  }
+  @IBAction func worriedPressed(sender: UIButton) {
+    concernLevel = concernLevels.worried
+    transitionToFluidDrainage()
+  }
+  @IBAction func unconcernedPressed(sender: UIButton) {
+    concernLevel = concernLevels.unconcerned
+    transitionToFluidDrainage()
+  }
+  
+  func transitionToFluidDrainage() {
+    let fluidDrainageVC = FluidDrainageVC(nibName: "FluidDrainageVC", bundle: nil)
+    navigationController!.pushViewController(fluidDrainageVC, animated: true)
+  }
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
