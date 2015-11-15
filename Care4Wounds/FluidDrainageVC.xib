@@ -6,10 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FluidDrainageVC" customModule="Care4Wounds" customModuleProvider="target">
             <connections>
-                <outlet property="color" destination="y8S-Jr-dxg" id="yVQ-Ei-aqC"/>
+                <outlet property="colorField" destination="y8S-Jr-dxg" id="jlB-Fw-sxy"/>
                 <outlet property="isDraining" destination="nfB-hZ-KV4" id="eSV-Nj-YfQ"/>
                 <outlet property="menu" destination="mcE-OE-l13" id="uvd-By-EoN"/>
-                <outlet property="type" destination="slP-0R-lkW" id="lW2-O2-zLV"/>
+                <outlet property="typeField" destination="slP-0R-lkW" id="WDp-Zi-cUW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

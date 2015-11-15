@@ -11,6 +11,7 @@ import UIKit
 class SelectWoundVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
   
   var wounds = [Wound]()
+  var doctorInfo = DoctorInfo()
   
   @IBOutlet weak var selectButton: UIButton!
   @IBOutlet weak var pickerView: UIPickerView!
@@ -28,7 +29,6 @@ class SelectWoundVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     CoreDataHelper.rollBack()
     wounds = CoreDataHelper.fetchEntities("Wound", predicate: nil) as! [Wound]
-    print(wounds)
     pickerView.reloadAllComponents()
   }
   
@@ -39,7 +39,8 @@ class SelectWoundVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
   
   @IBAction func selectWoundPressed(sender: UIButton) {
     let concernLevelVC = ConcernLevelVC(nibName: "ConcernLevelVC", bundle: nil)
-    concernLevelVC.wound = wounds[pickerView.selectedRowInComponent(0)]
+    doctorInfo.wound = wounds[pickerView.selectedRowInComponent(0)]
+    concernLevelVC.doctorInfo = doctorInfo
     navigationController!.pushViewController(concernLevelVC, animated: true)
   }
   

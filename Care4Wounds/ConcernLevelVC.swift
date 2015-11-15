@@ -9,37 +9,25 @@
 import UIKit
 
 class ConcernLevelVC: UIViewController {
+  
   enum concernLevels {
     case unconcerned
     case worried
     case veryconcerned
   }
   
-  var wound: Wound?
-  var concernLevel:concernLevels
-  
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-    wound = nil
-    concernLevel = concernLevels.unconcerned
-    super.init(nibName:nibNameOrNil,bundle:nibBundleOrNil)
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    wound = nil
-    concernLevel = concernLevels.unconcerned
-    super.init(coder:aDecoder)
-  }
+  var doctorInfo:DoctorInfo = DoctorInfo()
   
   @IBAction func veryConcernedPressed(sender: UIButton) {
-    concernLevel = concernLevels.veryconcerned
+    doctorInfo.concernLevel = concernLevels.veryconcerned
     transitionToFluidDrainage()
   }
   @IBAction func worriedPressed(sender: UIButton) {
-    concernLevel = concernLevels.worried
+    doctorInfo.concernLevel = concernLevels.worried
     transitionToFluidDrainage()
   }
   @IBAction func unconcernedPressed(sender: UIButton) {
-    concernLevel = concernLevels.unconcerned
+    doctorInfo.concernLevel = concernLevels.unconcerned
     transitionToFluidDrainage()
   }
   

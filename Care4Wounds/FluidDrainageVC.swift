@@ -15,9 +15,8 @@ class FluidDrainageVC: UIViewController {
   @IBOutlet weak var typeField: UITextField!
   @IBOutlet weak var menu: UIView!
   
-  var color = "Invalid: not draining"
-  var type = "Invalid: not draining"
-  
+  var doctorInfo:DoctorInfo = DoctorInfo()
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
