@@ -24,7 +24,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="227" height="134"/>
                             <animations/>
                             <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                            <state key="normal" image="camera.png">
+                            <state key="normal" image="compact_camera.png">
                                 <attributedString key="attributedTitle">
                                     <fragment content="Take Photo">
                                         <attributes>
@@ -40,7 +40,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-Y7-Xsg">
                             <rect key="frame" x="0.0" y="134" width="227" height="134"/>
                             <animations/>
-                            <state key="normal" image="stack_of_photos_filled.png">
+                            <state key="normal" image="stack_of_photos.png">
                                 <attributedString key="attributedTitle">
                                     <fragment content="View Photos">
                                         <attributes>
@@ -56,11 +56,12 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRg-qe-WVM">
                             <rect key="frame" x="0.0" y="268" width="227" height="133"/>
                             <animations/>
-                            <state key="normal" image="area_chart.png">
+                            <state key="normal" image="future.png">
                                 <attributedString key="attributedTitle">
-                                    <fragment content="View Data">
+                                    <fragment content="View Change">
                                         <attributes>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -101,9 +102,9 @@
         </view>
     </objects>
     <resources>
-        <image name="area_chart.png" width="96" height="96"/>
-        <image name="camera.png" width="100" height="100"/>
-        <image name="stack_of_photos_filled.png" width="100" height="100"/>
+        <image name="compact_camera.png" width="96" height="96"/>
+        <image name="future.png" width="96" height="96"/>
+        <image name="stack_of_photos.png" width="96" height="96"/>
         <image name="treatment_plan.png" width="96" height="96"/>
     </resources>
 </document>

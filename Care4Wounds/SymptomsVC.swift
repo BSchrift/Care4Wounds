@@ -51,6 +51,7 @@ class SymptomsVC: UIViewController {
     
     func retainChanges() {
         updateSymptoms()
+        CoreDataHelper.saveData()
         navigationController?.popViewControllerAnimated(true)
     }
     
@@ -63,8 +64,6 @@ class SymptomsVC: UIViewController {
         swellingSwitch.on = (woundPhoto.hasSwelling?.boolValue != nil)      ? (woundPhoto.hasSwelling?.boolValue)!      : false
         painSwitch.on     = (woundPhoto.hasPain?.boolValue != nil)          ? (woundPhoto.hasPain?.boolValue)!          : false
         fluidSwitch.on    = (woundPhoto.hasFluidDrainage?.boolValue != nil) ? (woundPhoto.hasFluidDrainage?.boolValue)! : false
-
-        
     }
     
     func updateSymptoms() {

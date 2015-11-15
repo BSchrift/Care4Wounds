@@ -20,6 +20,9 @@ class PhotoDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("closeKeyboard"))
+        view.addGestureRecognizer(tapRecognizer)
+        
         photo.image = UIImage(data: woundPhoto.photoImage!)
         
         if (woundPhoto.woundLength?.stringValue != "") {
@@ -42,12 +45,20 @@ class PhotoDetailVC: UIViewController {
         navigationItem.title = dateStr
     }
     
+    func closeKeyboard() {
+        if (painLevelField.isFirstResponder()) {
+            painLevelField.resignFirstResponder()
+        } else if (lengthField.isFirstResponder()) {
+            lengthField.resignFirstResponder()
+        }
+    }
+    
     func savePhoto() {
         CoreDataHelper.saveData()
         
         if (alertDoctorWhenDone) {
-            navigationController?.popToRootViewControllerAnimated(false)
-            //navigationController?.pushViewController(viewController: UIViewController, animated: <#T##Bool#>)
+            navigationController?.popToRootViewControllerAnimated(true)
+            //TODO: Generate email from here
         } else {
             // If this is the first photo
             let predicate = NSPredicate(format: "wound == %@", woundPhoto.wound!)
@@ -61,6 +72,10 @@ class PhotoDetailVC: UIViewController {
     
     @IBAction func painLevelChanged(sender: UITextField) {
         woundPhoto.levelOfPain = NSNumber(float: (sender.text! as NSString).floatValue)
+    }
+    
+    @IBAction func lengthChanged(sender: UITextField) {
+        woundPhoto.woundLength = NSNumber(float: (sender.text! as NSString).floatValue)
     }
     
     @IBAction func levelOfConcernChanged(sender: UISegmentedControl) {
