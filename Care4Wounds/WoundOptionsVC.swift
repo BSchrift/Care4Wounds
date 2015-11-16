@@ -11,7 +11,6 @@ import UIKit
 class WoundOptionsVC : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var wound : Wound!
     var imagePicker: UIImagePickerController!
-    @IBOutlet weak var viewPhotosButton: UIButton!
     @IBOutlet weak var viewDataButton: UIButton!
     @IBOutlet weak var viewSymptomsButton: UIButton!
     
@@ -23,9 +22,13 @@ class WoundOptionsVC : UIViewController, UIImagePickerControllerDelegate, UINavi
         let predicate = NSPredicate(format: "wound == %@", wound!)
         
         let hasPhotos = CoreDataHelper.fetchNumberOfEntities("WoundPhoto", predicate: predicate) > 0
-        viewPhotosButton.enabled = hasPhotos
         viewDataButton.enabled = hasPhotos
         viewSymptomsButton.enabled = hasPhotos
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imagePicker = UIImagePickerController()
     }
     
     @IBAction func cameraButtonPressed(sender: UIButton) {
@@ -64,12 +67,6 @@ class WoundOptionsVC : UIViewController, UIImagePickerControllerDelegate, UINavi
         woundPhoto.wound = wound
         woundPhoto.photoImage = imageData
         return woundPhoto
-    }
-    
-    @IBAction func photosButtonPressed(sender: UIButton) {
-        let photosVC = PhotosVC(nibName: "PhotosVC", bundle: nil)
-        photosVC.wound = wound
-        navigationController!.pushViewController(photosVC, animated: true);
     }
     
     @IBAction func dataButtonPressed(sender: UIButton) {

@@ -46,15 +46,15 @@ class SelectWoundVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
 
   }
   
-  func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
+  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
     return 1
   }
   
-  func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+  func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return wounds.count
   }
   
-  func pickerView(_ pickerView: UIPickerView,
+  func pickerView(pickerView: UIPickerView,
     titleForRow row: Int,
     forComponent component: Int) -> String? {
       return wounds[row].bodyLocation

@@ -78,7 +78,6 @@ class WoundTableVC : UIViewController, UITableViewDataSource, UITableViewDelegat
     }
     
   func createWound() -> Wound {
-    let entities = CoreDataHelper.fetchNumberOfEntities("Wound", predicate: nil)
     let wound = CoreDataHelper.insertManagedObject("Wound") as! Wound
     wound.bodyLocation = self.newWoundLocation
     CoreDataHelper.saveData()

@@ -22,7 +22,6 @@
 		DC4229811BF80E6A00824E31 /* WoundOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC42297F1BF80E6A00824E31 /* WoundOptionsVC.swift */; };
 		DC63A2E11BF40359006AE2C4 /* compact_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E01BF40359006AE2C4 /* compact_camera.png */; };
 		DC63A2E71BF40443006AE2C4 /* treatment_plan.png in Resources */ = {isa = PBXBuildFile; fileRef = DC63A2E61BF40443006AE2C4 /* treatment_plan.png */; };
-		DC839CF91BF9489800A3EFC3 /* stack_of_photos.png in Resources */ = {isa = PBXBuildFile; fileRef = DC839CF81BF9489800A3EFC3 /* stack_of_photos.png */; };
 		DC839CFB1BF948A100A3EFC3 /* future.png in Resources */ = {isa = PBXBuildFile; fileRef = DC839CFA1BF948A100A3EFC3 /* future.png */; };
 		DC839CFD1BF948F500A3EFC3 /* WoundOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC839CFC1BF948F500A3EFC3 /* WoundOptionsVC.xib */; };
 		DC839D001BF9494000A3EFC3 /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC839CFE1BF9494000A3EFC3 /* PhotoDetailVC.swift */; };
@@ -48,6 +47,7 @@
 		DCB341E11BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */; };
 		DCB341E71BF195B30014F89B /* wound.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E61BF195B30014F89B /* wound.png */; };
 		DCB341E91BF1979B0014F89B /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB341E81BF1979B0014F89B /* doctor.png */; };
+		DCE74C531BF9A829007439E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE74C521BF9A829007439E5 /* Images.xcassets */; };
 		DCE7D9721BF55C1600537CDA /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE7D9711BF55C1600537CDA /* error.png */; };
 		DCF0D0BA1BF118DC00223547 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */; };
 		DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */; };
@@ -86,7 +86,6 @@
 		DC42297F1BF80E6A00824E31 /* WoundOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoundOptionsVC.swift; sourceTree = "<group>"; };
 		DC63A2E01BF40359006AE2C4 /* compact_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compact_camera.png; sourceTree = "<group>"; };
 		DC63A2E61BF40443006AE2C4 /* treatment_plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = treatment_plan.png; sourceTree = "<group>"; };
-		DC839CF81BF9489800A3EFC3 /* stack_of_photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack_of_photos.png; sourceTree = "<group>"; };
 		DC839CFA1BF948A100A3EFC3 /* future.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = future.png; sourceTree = "<group>"; };
 		DC839CFC1BF948F500A3EFC3 /* WoundOptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WoundOptionsVC.xib; sourceTree = "<group>"; };
 		DC839CFE1BF9494000A3EFC3 /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailVC.swift; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		DCB341E01BF160BF0014F89B /* WoundPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WoundPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DCB341E61BF195B30014F89B /* wound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wound.png; sourceTree = "<group>"; };
 		DCB341E81BF1979B0014F89B /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		DCE74C521BF9A829007439E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCE7D9711BF55C1600537CDA /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		DCF0D0B91BF118DC00223547 /* MainMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		DCF0D0CB1BF11A5900223547 /* MainMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuVC.xib; sourceTree = "<group>"; };
@@ -197,6 +197,7 @@
 				DCAF53C61BF0594A005AB5DD /* Assets.xcassets */,
 				DCAF53C81BF0594A005AB5DD /* LaunchScreen.storyboard */,
 				DCAF53CB1BF0594A005AB5DD /* Info.plist */,
+				DCE74C521BF9A829007439E5 /* Images.xcassets */,
 			);
 			path = Care4Wounds;
 			sourceTree = "<group>";
@@ -229,7 +230,6 @@
 				DCB341E81BF1979B0014F89B /* doctor.png */,
 				DCB341E61BF195B30014F89B /* wound.png */,
 				DC63A2E01BF40359006AE2C4 /* compact_camera.png */,
-				DC839CF81BF9489800A3EFC3 /* stack_of_photos.png */,
 				DC839CFA1BF948A100A3EFC3 /* future.png */,
 				DC63A2E61BF40443006AE2C4 /* treatment_plan.png */,
 			);
@@ -344,7 +344,7 @@
 				TargetAttributes = {
 					DCAF53BB1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = H24HQB63J2;
+						DevelopmentTeam = 9U36A9M8V8;
 					};
 					DCAF53CF1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
@@ -390,9 +390,9 @@
 				DC839D011BF9494000A3EFC3 /* PhotoDetailVC.xib in Resources */,
 				CB85A6701BF817DB006664EB /* sad.png in Resources */,
 				DC63A2E71BF40443006AE2C4 /* treatment_plan.png in Resources */,
+				DCE74C531BF9A829007439E5 /* Images.xcassets in Resources */,
 				DCB341C11BF154900014F89B /* WoundTableVC.xib in Resources */,
 				DC839CFB1BF948A100A3EFC3 /* future.png in Resources */,
-				DC839CF91BF9489800A3EFC3 /* stack_of_photos.png in Resources */,
 				CBBB557C1BF688370004D32F /* SelectWoundVC.xib in Resources */,
 				DCB341E71BF195B30014F89B /* wound.png in Resources */,
 				DC839CFD1BF948F500A3EFC3 /* WoundOptionsVC.xib in Resources */,
