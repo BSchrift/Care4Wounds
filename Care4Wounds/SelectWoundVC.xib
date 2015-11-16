@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-94-7hF">
+                <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-94-7hF">
                     <rect key="frame" x="0.0" y="192" width="600" height="216"/>
                 </pickerView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select Wound" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-vu-ci5">
@@ -40,6 +40,7 @@
             <constraints>
                 <constraint firstItem="5VD-vu-ci5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7k1-ZL-Hta"/>
                 <constraint firstItem="4wP-Kr-uUD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BVn-EU-L71"/>
+                <constraint firstItem="XGm-94-7hF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PLm-c8-EDT"/>
             </constraints>
         </view>
     </objects>
