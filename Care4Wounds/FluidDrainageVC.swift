@@ -28,6 +28,12 @@ class FluidDrainageVC: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+  @IBAction func continueToConcerns(sender: UIButton) {
+    let concernsVC = ConcernsVC(nibName: "FluidDrainageVC", bundle: nil)
+    concernsVC.doctorInfo = doctorInfo
+    navigationController!.pushViewController(concernsVC, animated: true)
+    
+  }
   @IBAction func isDrainingChanged(sender: UISwitch) {
     menu.hidden = !menu.hidden
   }

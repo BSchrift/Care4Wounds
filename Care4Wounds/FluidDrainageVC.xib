@@ -70,6 +70,16 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flg-NZ-D36">
+                    <rect key="frame" x="251" y="410" width="98" height="48"/>
+                    <color key="backgroundColor" red="0.841030732" green="0.841030732" blue="0.841030732" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="continueToConcerns:" destination="-1" eventType="touchUpInside" id="RCp-vo-5JP"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>

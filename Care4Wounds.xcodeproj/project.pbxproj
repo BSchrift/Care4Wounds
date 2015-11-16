@@ -13,6 +13,8 @@
 		CB85A67C1BF82483006664EB /* FluidDrainageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */; };
 		CB85A67D1BF82483006664EB /* FluidDrainageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */; };
 		CB85A67F1BF827E3006664EB /* DoctorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85A67E1BF827E3006664EB /* DoctorInfo.swift */; };
+		CBA7F3211BF97B5D004755FC /* ConcernsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA7F31F1BF97B5D004755FC /* ConcernsVC.swift */; };
+		CBA7F3221BF97B5D004755FC /* ConcernsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBA7F3201BF97B5D004755FC /* ConcernsVC.xib */; };
 		CBBB55771BF687180004D32F /* ConcernLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55751BF687180004D32F /* ConcernLevelVC.swift */; };
 		CBBB55781BF687180004D32F /* ConcernLevelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBB55761BF687180004D32F /* ConcernLevelVC.xib */; };
 		CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB55791BF688370004D32F /* SelectWoundVC.swift */; };
@@ -75,6 +77,8 @@
 		CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidDrainageVC.swift; sourceTree = "<group>"; };
 		CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FluidDrainageVC.xib; sourceTree = "<group>"; };
 		CB85A67E1BF827E3006664EB /* DoctorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorInfo.swift; sourceTree = "<group>"; };
+		CBA7F31F1BF97B5D004755FC /* ConcernsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernsVC.swift; sourceTree = "<group>"; };
+		CBA7F3201BF97B5D004755FC /* ConcernsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernsVC.xib; sourceTree = "<group>"; };
 		CBBB55751BF687180004D32F /* ConcernLevelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcernLevelVC.swift; sourceTree = "<group>"; };
 		CBBB55761BF687180004D32F /* ConcernLevelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConcernLevelVC.xib; sourceTree = "<group>"; };
 		CBBB55791BF688370004D32F /* SelectWoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectWoundVC.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				CBBB55761BF687180004D32F /* ConcernLevelVC.xib */,
 				CB85A67A1BF82483006664EB /* FluidDrainageVC.swift */,
 				CB85A67B1BF82483006664EB /* FluidDrainageVC.xib */,
+				CBA7F31F1BF97B5D004755FC /* ConcernsVC.swift */,
+				CBA7F3201BF97B5D004755FC /* ConcernsVC.xib */,
 				CB85A67E1BF827E3006664EB /* DoctorInfo.swift */,
 			);
 			name = "Contact Physician";
@@ -338,7 +344,7 @@
 				TargetAttributes = {
 					DCAF53BB1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 9U36A9M8V8;
+						DevelopmentTeam = H24HQB63J2;
 					};
 					DCAF53CF1BF0594A005AB5DD = {
 						CreatedOnToolsVersion = 7.1;
@@ -396,6 +402,7 @@
 				DCF0D0CC1BF11A5900223547 /* MainMenuVC.xib in Resources */,
 				DCB341B61BF154900014F89B /* PhotosVC.xib in Resources */,
 				DC839D051BF9495300A3EFC3 /* SymptomsVC.xib in Resources */,
+				CBA7F3221BF97B5D004755FC /* ConcernsVC.xib in Resources */,
 				CB85A66F1BF817DB006664EB /* happy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +438,7 @@
 				DC839D041BF9495300A3EFC3 /* SymptomsVC.swift in Sources */,
 				CBBB557B1BF688370004D32F /* SelectWoundVC.swift in Sources */,
 				DCB3419D1BF154870014F89B /* CoreDataHelper.swift in Sources */,
+				CBA7F3211BF97B5D004755FC /* ConcernsVC.swift in Sources */,
 				DCB341DB1BF160610014F89B /* Wound+CoreDataProperties.swift in Sources */,
 				DCB341B81BF154900014F89B /* Wound.swift in Sources */,
 				CBBB55771BF687180004D32F /* ConcernLevelVC.swift in Sources */,
