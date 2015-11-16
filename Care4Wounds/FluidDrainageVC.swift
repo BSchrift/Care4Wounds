@@ -29,7 +29,7 @@ class FluidDrainageVC: UIViewController {
   }
   
   @IBAction func continueToConcerns(sender: UIButton) {
-    let concernsVC = ConcernsVC(nibName: "FluidDrainageVC", bundle: nil)
+    let concernsVC = ConcernsVC(nibName: "ConcernsVC", bundle: nil)
     concernsVC.doctorInfo = doctorInfo
     navigationController!.pushViewController(concernsVC, animated: true)
     
