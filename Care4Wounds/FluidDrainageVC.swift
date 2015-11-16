@@ -19,8 +19,15 @@ class FluidDrainageVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+    view.addGestureRecognizer(tap)
     // Do any additional setup after loading the view.
+  }
+  
+  //Calls this function when the tap is recognized.
+  func dismissKeyboard() {
+    //Causes the view (or one of its embedded text fields) to resign the first responder status.
+    view.endEditing(true)
   }
   
   override func didReceiveMemoryWarning() {
@@ -30,6 +37,9 @@ class FluidDrainageVC: UIViewController {
   
   @IBAction func continueToConcerns(sender: UIButton) {
     let concernsVC = ConcernsVC(nibName: "ConcernsVC", bundle: nil)
+    doctorInfo.isDraining = !menu.hidden
+    doctorInfo.drainageColor = colorField.text ?? doctorInfo.drainageColor
+    doctorInfo.drainageType = typeField.text ?? doctorInfo.drainageType
     concernsVC.doctorInfo = doctorInfo
     navigationController!.pushViewController(concernsVC, animated: true)
     
