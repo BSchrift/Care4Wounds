@@ -20,6 +20,8 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet weak var currentLengthLabel: UILabel!
     @IBOutlet weak var firstConcernLabel: UILabel!
     @IBOutlet weak var currentConcernLabel: UILabel!
+    @IBOutlet weak var firstLevelOfPainLabel: UILabel!
+    @IBOutlet weak var currentlLevelOfPainLabel: UILabel!
     @IBOutlet weak var firstSymptomsTextView: UITextView!
     @IBOutlet weak var currentSymptomsTextView: UITextView!
     
@@ -36,7 +38,8 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
         loadPhotos()
         loadDates()
         loadLengths()
-        loadConcern()
+        loadConcerns()
+        loadLevelOfPains()
         loadSymptoms()
     }
     
@@ -57,11 +60,11 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
     }
     
     func loadLengths() {
-        firstLengthLabel.text = (firstWoundPhoto?.woundLength!.stringValue)! + "\""
-        currentLengthLabel.text = (currentWoundPhoto?.woundLength!.stringValue)! + "\""
+        firstLengthLabel.text! += (firstWoundPhoto?.woundLength!.stringValue)! + "\""
+        currentLengthLabel.text! += (currentWoundPhoto?.woundLength!.stringValue)! + "\""
     }
     
-    func loadConcern() {
+    func loadConcerns() {
         switch (firstWoundPhoto!.levelOfConcern!.integerValue) {
         case 0:
             firstConcernLabel.text = "Concern: None"
@@ -84,6 +87,11 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
         }
     }
     
+    func loadLevelOfPains() {
+        firstLevelOfPainLabel.text! += (firstWoundPhoto?.levelOfPain!.stringValue)!
+        currentlLevelOfPainLabel.text! += (currentWoundPhoto?.levelOfPain!.stringValue)!
+    }
+    
     func loadSymptoms() {
         var firstSymptoms : String = ""
         if (firstWoundPhoto!.hasPus?.boolValue != nil) && (firstWoundPhoto!.hasPus?.boolValue)! {
@@ -103,9 +111,6 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
         }
         if (firstWoundPhoto!.hasSwelling?.boolValue != nil) && (firstWoundPhoto!.hasSwelling?.boolValue)! {
             firstSymptoms += "Swelling - "
-        }
-        if (firstWoundPhoto!.hasPain?.boolValue != nil) && (firstWoundPhoto!.hasPain?.boolValue)! {
-            firstSymptoms += "Pain - "
         }
         if (firstWoundPhoto!.hasFluidDrainage?.boolValue != nil) && (firstWoundPhoto!.hasFluidDrainage?.boolValue)! {
             firstSymptoms += "Fluid Drainage - "
@@ -133,9 +138,6 @@ class WoundDataVC: UIViewController, MFMailComposeViewControllerDelegate {
         }
         if (currentWoundPhoto!.hasSwelling?.boolValue != nil) && (currentWoundPhoto!.hasSwelling?.boolValue)! {
             currentSymptoms += "Swelling - "
-        }
-        if (currentWoundPhoto!.hasPain?.boolValue != nil) && (currentWoundPhoto!.hasPain?.boolValue)! {
-            currentSymptoms += "Pain - "
         }
         if (currentWoundPhoto!.hasFluidDrainage?.boolValue != nil) && (currentWoundPhoto!.hasFluidDrainage?.boolValue)! {
             currentSymptoms += "Fluid Drainage - "

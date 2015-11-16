@@ -18,7 +18,6 @@ class SymptomsVC: UIViewController {
     @IBOutlet weak var rednessSwitch: UISwitch!
     @IBOutlet weak var warmthSwitch: UISwitch!
     @IBOutlet weak var swellingSwitch: UISwitch!
-    @IBOutlet weak var painSwitch: UISwitch!
     @IBOutlet weak var fluidSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -45,7 +44,6 @@ class SymptomsVC: UIViewController {
         rednessSwitch.enabled  = enabled
         warmthSwitch.enabled   = enabled
         swellingSwitch.enabled = enabled
-        painSwitch.enabled     = enabled
         fluidSwitch.enabled    = enabled
     }
     
@@ -62,7 +60,6 @@ class SymptomsVC: UIViewController {
         rednessSwitch.on  = (woundPhoto.hasRedness?.boolValue != nil)       ? (woundPhoto.hasRedness?.boolValue)!       : false
         warmthSwitch.on   = (woundPhoto.hasWarmth?.boolValue != nil)        ? (woundPhoto.hasWarmth?.boolValue)!        : false
         swellingSwitch.on = (woundPhoto.hasSwelling?.boolValue != nil)      ? (woundPhoto.hasSwelling?.boolValue)!      : false
-        painSwitch.on     = (woundPhoto.hasPain?.boolValue != nil)          ? (woundPhoto.hasPain?.boolValue)!          : false
         fluidSwitch.on    = (woundPhoto.hasFluidDrainage?.boolValue != nil) ? (woundPhoto.hasFluidDrainage?.boolValue)! : false
     }
     
@@ -73,7 +70,6 @@ class SymptomsVC: UIViewController {
         woundPhoto.hasRedness = rednessSwitch.on
         woundPhoto.hasWarmth = warmthSwitch.on
         woundPhoto.hasSwelling = swellingSwitch.on
-        woundPhoto.hasPain = painSwitch.on
         woundPhoto.hasFluidDrainage = fluidSwitch.on
     }
     
