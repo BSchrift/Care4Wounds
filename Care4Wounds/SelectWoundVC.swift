@@ -38,10 +38,12 @@ class SelectWoundVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
   }
   
   @IBAction func selectWoundPressed(sender: UIButton) {
-    let concernLevelVC = ConcernLevelVC(nibName: "ConcernLevelVC", bundle: nil)
-    doctorInfo.wound = wounds[pickerView.selectedRowInComponent(0)]
-    concernLevelVC.doctorInfo = doctorInfo
-    navigationController!.pushViewController(concernLevelVC, animated: true)
+    navigationController?.popToRootViewControllerAnimated(true)
+    let woundDataVC = WoundDataVC(nibName: "WoundDataVC", bundle: nil)
+    woundDataVC.wound = wounds[pickerView.selectedRowInComponent(0)]
+    navigationController!.pushViewController(woundDataVC, animated: true);
+    woundDataVC.presentMailVC()
+
   }
   
   func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
